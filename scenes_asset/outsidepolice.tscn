@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cvpwbpckh4wdd"]
+
+[ext_resource type="PackedScene" uid="uid://y8rg06t2vacv" path="res://Echoes-of-the-Unseen-Restart/asset_import/outsidepolice.glb" id="1_3y3ld"]
+
+[node name="outsidepolice" unique_id=1978004551 instance=ExtResource("1_3y3ld")]
