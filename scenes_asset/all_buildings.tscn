@@ -747,7 +747,7 @@ size = Vector3(3210.7646, 3158.208, 10849.164)
 [node name="allBuildings" type="Node3D" unique_id=1703356884]
 
 [node name="bina_004" type="MeshInstance3D" parent="." unique_id=1321863295]
-transform = Transform3D(0.32242703, 0, 0, 0, 0.32242703, 0, 0, 0, 0.32242703, 123.0869, 9.123382, 15.358033)
+transform = Transform3D(0.23214746, 0, 0, 0, 0.2611659, 0, 0, 0, 0.32242703, 99.660995, 10.672569, 15.358032)
 mesh = SubResource("ArrayMesh_4ebja")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_004" unique_id=473007325]
@@ -757,7 +757,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.794695, -8.028727, 7.67309
 shape = SubResource("BoxShape3D_5hj70")
 
 [node name="bina_014" type="MeshInstance3D" parent="." unique_id=624064471]
-transform = Transform3D(0.32242703, 0, 0, 0, 0.32242703, 0, 0, 0, 0.32242703, 101.66174, 10.386056, 19.631592)
+transform = Transform3D(0.23214746, 0, 0, 0, 0.2611659, 0, 0, 0, 0.32242703, 84.23488, 11.695335, 19.631592)
 mesh = SubResource("ArrayMesh_mcv3g")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_014" unique_id=692840396]
@@ -767,7 +767,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6890488, 6.308033, -14.2463
 shape = SubResource("BoxShape3D_casak")
 
 [node name="bina" type="MeshInstance3D" parent="." unique_id=1184705638]
-transform = Transform3D(0.32242703, 0, 0, 0, 0.32242703, 0, 0, 0, 0.32242703, 79.4314, 13.759648, 17.51823)
+transform = Transform3D(0.23214746, 0, 0, 0, 0.2611659, 0, 0, 0, 0.32242703, 68.22903, 14.427945, 17.518234)
 mesh = SubResource("ArrayMesh_xqkm4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina" unique_id=617317856]
@@ -777,7 +777,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4040565, 18.270008, -1.5329
 shape = SubResource("BoxShape3D_iu0gs")
 
 [node name="bina_006" type="MeshInstance3D" parent="." unique_id=838213197]
-transform = Transform3D(0.32242703, 0, 0, 0, 0.32242703, 0, 0, 0, 0.32242703, 56.63488, 23.163845, 20.328587)
+transform = Transform3D(0.23214746, 0, 0, 0, 0.2611659, 0, 0, 0, 0.32242703, 51.81554, 22.045345, 20.32859)
 mesh = SubResource("ArrayMesh_d4hxb")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_006" unique_id=88697639]
@@ -787,7 +787,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3364086, 12.121407, -6.9018
 shape = SubResource("BoxShape3D_twrpq")
 
 [node name="bina_001" type="MeshInstance3D" parent="." unique_id=939155937]
-transform = Transform3D(0.32242703, 0, 0, 0, 0.32242703, 0, 0, 0, 0.32242703, 25.012941, 22.720297, 21.341604)
+transform = Transform3D(0.23214746, 0, 0, 0, 0.2611659, 0, 0, 0, 0.32242703, 29.04774, 21.68607, 21.341606)
 mesh = SubResource("ArrayMesh_b28uw")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_001" unique_id=188480607]
@@ -797,7 +797,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5094109, -7.6908875, -2.52
 shape = SubResource("BoxShape3D_upk8k")
 
 [node name="bina_009" type="MeshInstance3D" parent="." unique_id=566690620]
-transform = Transform3D(0.32242703, 0, 0, 0, 0.32242703, 0, 0, 0, 0.32242703, -6.822508, 29.264082, 21.33663)
+transform = Transform3D(0.23214746, 0, 0, 0, 0.2611659, 0, 0, 0, 0.32242703, 6.1262207, 26.986534, 21.336632)
 mesh = SubResource("ArrayMesh_bkyn2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_009" unique_id=1026958640]
@@ -807,7 +807,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.88365936, -31.81739, -1.48
 shape = SubResource("BoxShape3D_o454y")
 
 [node name="bina_008" type="MeshInstance3D" parent="." unique_id=2042427227]
-transform = Transform3D(0.32242703, 0, 0, 0, 0.32242703, 0, 0, 0, 0.32242703, -45.05604, 12.572229, 19.115482)
+transform = Transform3D(0.23214746, 0, 0, 0, 0.2611659, 0, 0, 0, 0.32242703, -21.401924, 13.466136, 19.115486)
 mesh = SubResource("ArrayMesh_f3sao")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_008" unique_id=1100909187]
@@ -817,7 +817,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45580292, -7.104725, 12.506
 shape = SubResource("BoxShape3D_3tgku")
 
 [node name="bina_007" type="MeshInstance3D" parent="." unique_id=671426251]
-transform = Transform3D(0.32242703, 0, 0, 0, 0.32242703, 0, 0, 0, 0.32242703, -51.024265, 23.784338, -62.852257)
+transform = Transform3D(0.23214746, 0, 0, 0, 0.2611659, 0, 0, 0, 0.32242703, -25.699047, 22.547943, -62.852257)
 mesh = SubResource("ArrayMesh_7b6yk")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_007" unique_id=1889020033]
@@ -827,7 +827,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38801575, -0.65657806, 8.0
 shape = SubResource("BoxShape3D_d1yeg")
 
 [node name="bina_005" type="MeshInstance3D" parent="." unique_id=2054547393]
-transform = Transform3D(0.32242703, 0, 0, 0, 0.32242703, 0, 0, 0, 0.32242703, -99.05584, 6.337484, 3.2739458)
+transform = Transform3D(0.23214746, 0, 0, 0, 0.2611659, 0, 0, 0, 0.32242703, -60.28178, 8.415993, 3.2739468)
 mesh = SubResource("ArrayMesh_bqc5y")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_005" unique_id=1917055603]
@@ -837,7 +837,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.059113, 8.5740185, -0.45650
 shape = SubResource("BoxShape3D_ba610")
 
 [node name="bina_012" type="MeshInstance3D" parent="." unique_id=1451167674]
-transform = Transform3D(0.004347375, 0, 0, 0, -0.004347375, 6.564354e-10, 0, -6.564354e-10, -0.004347375, -18.260336, 18.420132, -72.734055)
+transform = Transform3D(0.00313011, 0, 0, 0, -0.0035213737, 6.564354e-10, 0, -5.317127e-10, -0.004347375, -2.1090164, 18.202936, -72.734055)
 mesh = SubResource("ArrayMesh_oawte")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_012" unique_id=453883473]
@@ -847,7 +847,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128.13171, 338.81543, -703.6
 shape = SubResource("BoxShape3D_apu04")
 
 [node name="bina_015" type="MeshInstance3D" parent="." unique_id=1319020470]
-transform = Transform3D(0.0049129557, 0, 0, 0, 0, -0.0049129557, 0, 0.0049129557, 0, 37.480385, 12.25693, -73.14664)
+transform = Transform3D(0.0035373282, 0, 0, 0, 0, -0.003979494, 0, 0.0049129557, 0, 38.0243, 13.210745, -73.14664)
 mesh = SubResource("ArrayMesh_b3ogb")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_015" unique_id=1574024997]
@@ -857,7 +857,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.885254, 694.741, -341.94507
 shape = SubResource("BoxShape3D_g20fx")
 
 [node name="bina_013" type="MeshInstance3D" parent="." unique_id=1531401870]
-transform = Transform3D(0.0013974647, 0, 0, 0, 0, -0.0013974647, 0, 0.0013974647, 0, 9.250896, 10.419128, -71.928345)
+transform = Transform3D(0.0010061746, 0, 0, 0, 0, -0.0011319463, 0, 0.0013974647, 0, 17.69907, 11.722124, -71.928345)
 mesh = SubResource("ArrayMesh_vf6w0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_013" unique_id=104353171]
@@ -867,7 +867,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -486.93506, 2199.2007, -5369.
 shape = SubResource("BoxShape3D_ovq3r")
 
 [node name="bina_010" type="MeshInstance3D" parent="." unique_id=262584422]
-transform = Transform3D(1.75701e-11, -3.709178e-12, -4.9129554e-05, 3.7091784e-12, -4.9129554e-05, 3.7091792e-12, -4.9129554e-05, -3.7091797e-12, -1.75701e-11, 95.41533, 20.270782, -66.22055)
+transform = Transform3D(1.7570102e-11, -3.004434e-12, -3.537328e-05, 3.709179e-12, -3.9794937e-05, 2.6706092e-12, -4.912956e-05, -3.0044352e-12, -1.2650471e-11, 79.73746, 19.701965, -66.22055)
 mesh = SubResource("ArrayMesh_jm6rx")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_010" unique_id=256756515]
@@ -877,7 +877,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13582.734, -102489, 40809.79
 shape = SubResource("BoxShape3D_1pcgd")
 
 [node name="bina_002" type="MeshInstance3D" parent="." unique_id=807586320]
-transform = Transform3D(-4.9129554e-05, 4.2950413e-12, 0, -4.2950413e-12, -4.9129554e-05, 0, 0, 0, 4.9129554e-05, 129.03447, 27.838837, -66.24528)
+transform = Transform3D(-3.537328e-05, 3.4789834e-12, 0, -3.0924297e-12, -3.9794937e-05, 0, 0, 0, 4.9129554e-05, 103.94324, 25.832088, -66.24528)
 mesh = SubResource("ArrayMesh_45gwr")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_002" unique_id=2071263426]
@@ -887,7 +887,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9553.219, -3239.5313, 40604.9
 shape = SubResource("BoxShape3D_47p4l")
 
 [node name="bina_003" type="MeshInstance3D" parent="." unique_id=359627429]
-transform = Transform3D(-4.9129554e-05, 4.2950413e-12, 0, -4.2950413e-12, -4.9129554e-05, 0, 0, 0, 4.9129554e-05, 128.2577, 16.598082, -65.3353)
+transform = Transform3D(-3.537328e-05, 3.4789834e-12, 0, -3.0924297e-12, -3.9794937e-05, 0, 0, 0, 4.9129554e-05, 103.38398, 16.727076, -65.3353)
 mesh = SubResource("ArrayMesh_f3uhe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_003" unique_id=516355115]
@@ -897,7 +897,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22412.625, -177244.37, 24617.
 shape = SubResource("BoxShape3D_76et4")
 
 [node name="bina_036" type="MeshInstance3D" parent="." unique_id=1490156428]
-transform = Transform3D(0.0049129557, 0, 0, 0, 0, -0.0049129557, 0, 0.0049129557, 0, 65.71948, 19.516716, -72.249084)
+transform = Transform3D(0.0035373282, 0, 0, 0, 0, -0.003979494, 0, 0.0049129557, 0, 58.356453, 19.09117, -72.249084)
 mesh = SubResource("ArrayMesh_i65ae")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bina_036" unique_id=691481617]
