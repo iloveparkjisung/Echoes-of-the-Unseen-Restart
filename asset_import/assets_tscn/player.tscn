@@ -1,25 +1,26 @@
 [gd_scene format=3 uid="uid://dvg8hnnnr5fec"]
 
-[ext_resource type="Script" uid="uid://ytsd06nxfwpc" path="res://player.gd" id="1_4flbx"]
-[ext_resource type="Script" uid="uid://d68swnf731rq" path="res://fp_cam.gd" id="2_onrkg"]
+[ext_resource type="Script" uid="uid://ytsd06nxfwpc" path="res://Echoes-of-the-Unseen-Restart/scripts/player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://d68swnf731rq" path="res://Echoes-of-the-Unseen-Restart/scripts/fp_cam.gd" id="2_onrkg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sh265"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_4flbx"]
 
-[node name="player" type="CharacterBody3D"]
+[node name="player" type="CharacterBody3D" unique_id=125777812]
 script = ExtResource("1_4flbx")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1360562246]
+transform = Transform3D(0.401, 0, 0, 0, 0.8, 0, 0, 0, 0.401, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_sh265")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, 0)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1932372856]
+transform = Transform3D(0.5, 0, 0, 0, 0.8, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("CapsuleMesh_4flbx")
 
-[node name="head" type="Node3D" parent="."]
+[node name="head" type="Node3D" parent="." unique_id=704061573]
 transform = Transform3D(0.16, 0, 0, 0, 0.3, 0, 0, 0, 0.5, 0, 0.657789, 0.186225)
 script = ExtResource("2_onrkg")
 
-[node name="Camera3D" type="Camera3D" parent="head"]
+[node name="Camera3D" type="Camera3D" parent="head" unique_id=1766438578]
+fov = 43.319733
