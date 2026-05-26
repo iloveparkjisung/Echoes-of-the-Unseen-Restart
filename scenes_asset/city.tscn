@@ -98,7 +98,9 @@ uv1_scale = Vector3(3.005, -8.995, 5)
 [node name="Road" type="MeshInstance3D" parent="." unique_id=1277579684]
 transform = Transform3D(10, 0, 0, 0, 0.2, 0, 0, 0, 20, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_xvknt")
+material_overlay = SubResource("StandardMaterial3D_xvknt")
 mesh = SubResource("BoxMesh_u2pmi")
+surface_material_override/0 = SubResource("StandardMaterial3D_xvknt")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Road" unique_id=1704724990]
 
