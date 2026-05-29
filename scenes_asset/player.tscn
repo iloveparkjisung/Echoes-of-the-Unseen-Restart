@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://dvg8hnnnr5fec"]
 
-[ext_resource type="Script" uid="uid://ytsd06nxfwpc" path="res://player.gd" id="1_4flbx"]
-[ext_resource type="Script" uid="uid://d68swnf731rq" path="res://fp_cam.gd" id="2_onrkg"]
+[ext_resource type="Script" uid="uid://ytsd06nxfwpc" path="res://Echoes-of-the-Unseen-Restart/scripts/player.gd" id="1_4flbx"]
+[ext_resource type="Script" path="res://Echoes-of-the-Unseen-Restart/scripts/fp_cam.gd" id="2_onrkg"]
+
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sh265"]
 
