@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bd04fw0wkbmw3"]
 
-[ext_resource type="Shader" uid="uid://dmvpvkb8y4p84" path="res://shaders/vhswiggle.gdshader" id="1_xyuob"]
+[ext_resource type="Shader" path="res://Echoes-of-the-Unseen-Restart/shader/vhswiggle.gdshader" id="1_xyuob"]
+
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2nmde"]
 shader = ExtResource("1_xyuob")
