@@ -6,13 +6,14 @@
 [ext_resource type="PackedScene" uid="uid://pxdnqj40kjef" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/lamppost.tscn" id="5_72avq"]
 [ext_resource type="PackedScene" uid="uid://dvg8hnnnr5fec" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/player.tscn" id="5_mf1ic"]
 [ext_resource type="Shader" path="res://Echoes-of-the-Unseen-Restart/shader/vhswiggle.gdshader" id="6_7vy4l"]
-[ext_resource type="Material" uid="uid://biq8atp6wpdye" path="res://Echoes-of-the-Unseen-Restart/textures/redish.tres" id="7_qqvyd"]
+[ext_resource type="Material" uid="uid://c4455dwnqaxwm" path="res://Echoes-of-the-Unseen-Restart/textures/graywall.tres" id="7_7p8gm"]
 [ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/building_1.tscn" id="8_pe4pk"]
 [ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/building_2.tscn" id="9_wyy7l"]
 [ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/building_3.tscn" id="10_nthl7"]
 [ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/building_4.tscn" id="11_co362"]
 [ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/building_5.tscn" id="12_jekt8"]
 [ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/building_6.tscn" id="13_6075j"]
+[ext_resource type="PackedScene" uid="uid://cvpwbpckh4wdd" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/outsidepolice.tscn" id="14_7p8gm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pyvco"]
 albedo_texture = ExtResource("3_7p8gm")
@@ -486,8 +487,6 @@ shadow_enabled = true
 spot_range = 5.46773
 spot_angle = 32.8651
 
-[node name="outsidepolice" parent="." unique_id=139670993 instance=ExtResource("1_obt5n")]
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1910422835]
 environment = SubResource("Environment_crsda")
 
@@ -509,7 +508,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.025, 15)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="FLOOR" unique_id=1182485091]
 transform = Transform3D(100, 0, 0, 0, 0.1, 0, 0, 0, 100, 0, 0, 0)
-material_override = ExtResource("7_qqvyd")
+material_override = ExtResource("7_7p8gm")
 mesh = SubResource("BoxMesh_nnj4j")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="FLOOR" unique_id=1373801432]
@@ -700,3 +699,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.8772, 14.9023, -21.9438)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Borders2" unique_id=1838740894]
 transform = Transform3D(1, 0, 0, 0, 39, 0, 0, 0, 90, 26.5281, 0, 42.7392)
 shape = SubResource("BoxShape3D_nxbbw")
+
+[node name="outsidepolice" parent="." unique_id=1978004551 instance=ExtResource("14_7p8gm")]
+transform = Transform3D(-1.8358781e-08, 0, 0.336, 0, 0.25999996, 0, -0.41999996, 0, -1.4687026e-08, -18.107323, 2.6530533, 32.333115)
