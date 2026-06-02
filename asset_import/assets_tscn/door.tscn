@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://fft6v5pe4pwh"]
 
-[ext_resource type="Shader" uid="uid://diwbo87eeu8fr" path="res://shaders/glass_wall.gdshader" id="1_ba8gm"]
-[ext_resource type="Texture2D" uid="uid://dbi8lxca5b3lr" path="res://assets/wood4.jpg" id="2_v6xrn"]
+[ext_resource type="Shader" path="res://Echoes-of-the-Unseen-Restart/shader/glass_wall.gdshader" id="1_ba8gm"]
+[ext_resource type="Texture2D" uid="uid://dbi8lxca5b3lr" path="res://Echoes-of-the-Unseen-Restart/asset_import/wood4.jpg" id="2_v6xrn"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_v6xrn"]
 
