@@ -88,8 +88,6 @@ omni_range = 11.8618
 
 [node name="player" parent="." unique_id=936025805 instance=ExtResource("1_dk3m8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.149501, 1.40131, 0)
-camera_sens = null
-cameraLimitDeg = null
 
 [node name="Office" type="Node3D" parent="." unique_id=2127870783]
 transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0)
