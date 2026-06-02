@@ -1,4 +1,4 @@
-extends CharacterBody3D
+extends Camera3D
 
 @onready var camera_3d = $Camera3D
 
