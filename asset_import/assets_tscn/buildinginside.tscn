@@ -1,0 +1,418 @@
+[gd_scene format=3 uid="uid://da757w1k25c37"]
+
+[ext_resource type="PackedScene" uid="uid://dvg8hnnnr5fec" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/player.tscn" id="1_dk3m8"]
+[ext_resource type="PackedScene" uid="uid://bko6478emsd1k" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/lighting.tscn" id="2_ow0sv"]
+[ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/glass_wall.tscn" id="3_5tbpe"]
+[ext_resource type="Texture2D" uid="uid://dtp6i5oj843eg" path="res://Echoes-of-the-Unseen-Restart/asset_import/carpet.jpg" id="3_bx1ou"]
+[ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/door.tscn" id="4_2cqdq"]
+[ext_resource type="Texture2D" uid="uid://coicphsv466jv" path="res://Echoes-of-the-Unseen-Restart/asset_import/wood2.jpg" id="4_i4pnx"]
+[ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/elevator.tscn" id="5_rbxts"]
+[ext_resource type="Texture2D" uid="uid://bwpxo8ji6u3fk" path="res://Echoes-of-the-Unseen-Restart/asset_import/wallgray1.jpg" id="7_fa6e4"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rqn35"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7eoow"]
+albedo_texture = ExtResource("3_bx1ou")
+uv1_scale = Vector3(-50, -50, -50)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dk3m8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8d3fe"]
+albedo_texture = ExtResource("4_i4pnx")
+uv1_scale = Vector3(-25, -25, -25)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cwi6k"]
+albedo_texture = ExtResource("4_i4pnx")
+uv1_scale = Vector3(-25, -25, -25)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i4pnx"]
+albedo_texture = ExtResource("7_fa6e4")
+uv1_scale = Vector3(-20, -20, -20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6mgdk"]
+albedo_texture = ExtResource("7_fa6e4")
+uv1_scale = Vector3(-20, -20, -20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fa6e4"]
+albedo_texture = ExtResource("7_fa6e4")
+uv1_scale = Vector3(-20, -20, -20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q7r2h"]
+albedo_texture = ExtResource("7_fa6e4")
+uv1_scale = Vector3(-20, -20, -20)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rbxts"]
+
+[node name="BuildingInside" type="Node3D" unique_id=1376290046]
+
+[node name="Lights" type="Node3D" parent="." unique_id=1040460944]
+
+[node name="Lighting" parent="Lights" unique_id=1000216351 instance=ExtResource("2_ow0sv")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.176033, 5.13468, -15.3517)
+
+[node name="Lighting2" parent="Lights" unique_id=1106807265 instance=ExtResource("2_ow0sv")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.176, 5.135, 0.198)
+
+[node name="Lighting3" parent="Lights" unique_id=1478666355 instance=ExtResource("2_ow0sv")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.176, 5.135, 14.339)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lights" unique_id=284959859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.216733, 3.60557, -15.2915)
+light_color = Color(1, 0.988235, 0.729412, 1)
+light_energy = 2.0
+light_indirect_energy = 5.0
+light_size = 5.57
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 11.8618
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lights" unique_id=1930055968]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.216733, 3.60557, 0.183842)
+light_color = Color(1, 0.988235, 0.729412, 1)
+light_energy = 2.0
+light_indirect_energy = 5.0
+light_size = 5.57
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 11.8618
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Lights" unique_id=785499061]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.216733, 3.60557, 14.6198)
+light_color = Color(1, 0.988235, 0.729412, 1)
+light_energy = 2.0
+light_indirect_energy = 5.0
+light_size = 5.57
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 11.8618
+
+[node name="player" parent="." unique_id=936025805 instance=ExtResource("1_dk3m8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.149501, 1.40131, 0)
+
+[node name="Office" type="Node3D" parent="." unique_id=2127870783]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="floor" type="StaticBody3D" parent="Office" unique_id=580897611]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/floor" unique_id=1206182278]
+transform = Transform3D(40.09, 0, 0, 0, 1, 0, 0, 0, 40, 0, 0, 0)
+mesh = SubResource("BoxMesh_rqn35")
+surface_material_override/0 = SubResource("StandardMaterial3D_7eoow")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/floor" unique_id=2012540923]
+transform = Transform3D(40, 0, 0, 0, 1, 0, 0, 0, 40, 0, 0, 0)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="wall" type="StaticBody3D" parent="Office" unique_id=222846868]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.545, 5.49, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/wall" unique_id=448504383]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 40, 0, 0, 0)
+mesh = SubResource("BoxMesh_rqn35")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/wall" unique_id=2144905024]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 40, 0, 0, 0)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="wall2" type="StaticBody3D" parent="Office" unique_id=2078703853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.54, 5.49, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/wall2" unique_id=1030062197]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 40, 0, 0, 0)
+mesh = SubResource("BoxMesh_rqn35")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/wall2" unique_id=1370289765]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 40, 0, 0, 0)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="wall3" type="StaticBody3D" parent="Office" unique_id=693351128]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5.49, -19.54)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/wall3" unique_id=2060636324]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 40, 0, 0, 0)
+mesh = SubResource("BoxMesh_rqn35")
+surface_material_override/0 = SubResource("StandardMaterial3D_8d3fe")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/wall3" unique_id=905895477]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 40, 0, 0, 0)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="wall4" type="StaticBody3D" parent="Office" unique_id=1485604428]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5.49, 19.54)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/wall4" unique_id=1326185882]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 40, 0.0328255, 0.0651646, -0.0280323)
+mesh = SubResource("BoxMesh_rqn35")
+surface_material_override/0 = SubResource("StandardMaterial3D_cwi6k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/wall4" unique_id=1618306790]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 40, 0, 0, 0)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="wall7" type="StaticBody3D" parent="Office" unique_id=1877360251]
+transform = Transform3D(-0.806036, 0, 1.50996e-07, 0, 1, 0, -1.21708e-07, 0, -1, 6.44875, 5.49, 19.3987)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/wall7" unique_id=376885150]
+transform = Transform3D(12.055, 0, 0, 0, 10, 0, 0, 0, 7.5, -9.61554, 0, 3.87087)
+mesh = SubResource("BoxMesh_rqn35")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/wall7" unique_id=1278615926]
+transform = Transform3D(12, 0, 0, 0, 10, 0, 0, 0, 7.5, -9.85555, 0, 3.61327)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="Room1" type="Node3D" parent="Office" unique_id=1343921498]
+transform = Transform3D(0.806036, 0, 0, 0, 1, 0, 0, 0, 1, 3.63808, 0, 0)
+
+[node name="Glasses" type="Node3D" parent="Office/Room1" unique_id=666289844]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 0.95, 0, 0, -0.28775)
+
+[node name="GlassWall" parent="Office/Room1/Glasses" unique_id=470190355 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -4.87218)
+
+[node name="GlassWall2" parent="Office/Room1/Glasses" unique_id=341862872 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -6.3438)
+
+[node name="GlassWall3" parent="Office/Room1/Glasses" unique_id=1467136966 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -7.80984)
+
+[node name="GlassWall4" parent="Office/Room1/Glasses" unique_id=82163459 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -9.2747)
+
+[node name="GlassWall5" parent="Office/Room1/Glasses" unique_id=316182015 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -10.7192)
+
+[node name="GlassWall6" parent="Office/Room1/Glasses" unique_id=361232951 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -12.165)
+
+[node name="GlassWall7" parent="Office/Room1/Glasses" unique_id=1933269870 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -13.6149)
+
+[node name="GlassWall8" parent="Office/Room1/Glasses" unique_id=550562607 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -15.0791)
+
+[node name="GlassWall9" parent="Office/Room1/Glasses" unique_id=676398116 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -16.5219)
+
+[node name="Door" parent="Office/Room1" unique_id=233359622 instance=ExtResource("4_2cqdq")]
+transform = Transform3D(1, 0, 0, 0, 3.34, 0, 0, 0, 1.4, -0.934547, 5.47011, -17.9589)
+
+[node name="wall5" type="StaticBody3D" parent="Office/Room1" unique_id=2067026654]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5.49, -3.70533)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/Room1/wall5" unique_id=2120448246]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 20.07, -4.76837e-07, 0, 9.01066)
+mesh = SubResource("BoxMesh_rqn35")
+surface_material_override/0 = SubResource("StandardMaterial3D_i4pnx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/Room1/wall5" unique_id=464883983]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 20, 0, 0, 9.011)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="wall6" type="StaticBody3D" parent="Office/Room1" unique_id=1983866456]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 3.48703, 5.49, -3.70533)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/Room1/wall6" unique_id=1581730132]
+transform = Transform3D(20.065, 0, 0, 0, 10, 0, 0, 0, 15.05, -6.09696, 0, 7.91155)
+mesh = SubResource("BoxMesh_rqn35")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/Room1/wall6" unique_id=825239661]
+transform = Transform3D(20, 0, 2.27374e-13, 0, 10, 0, 0, 0, 15, -6.04194, 0, 7.84978)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="Room2" type="Node3D" parent="Office" unique_id=2046693748]
+transform = Transform3D(0.806036, 0, 0, 0, 1, 0, 0, 0, 1, 3.63808, 0, 15.9098)
+
+[node name="Glasses" type="Node3D" parent="Office/Room2" unique_id=1507297858]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 0.95, 0, 0, -0.28775)
+
+[node name="GlassWall" parent="Office/Room2/Glasses" unique_id=982474445 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -4.87218)
+
+[node name="GlassWall2" parent="Office/Room2/Glasses" unique_id=614182882 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -6.3438)
+
+[node name="GlassWall3" parent="Office/Room2/Glasses" unique_id=1652420187 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -7.80984)
+
+[node name="GlassWall4" parent="Office/Room2/Glasses" unique_id=1402270924 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -9.2747)
+
+[node name="GlassWall5" parent="Office/Room2/Glasses" unique_id=496588763 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -10.7192)
+
+[node name="GlassWall6" parent="Office/Room2/Glasses" unique_id=1275555184 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -12.165)
+
+[node name="GlassWall7" parent="Office/Room2/Glasses" unique_id=971232672 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -13.6149)
+
+[node name="GlassWall8" parent="Office/Room2/Glasses" unique_id=1658503454 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -15.0791)
+
+[node name="GlassWall9" parent="Office/Room2/Glasses" unique_id=485763392 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -16.5219)
+
+[node name="Door" parent="Office/Room2" unique_id=304268658 instance=ExtResource("4_2cqdq")]
+transform = Transform3D(1, 0, 0, 0, 3.34, 0, 0, 0, 1.4, -0.934547, 5.47011, -17.9589)
+
+[node name="wall5" type="StaticBody3D" parent="Office/Room2" unique_id=1041109755]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5.49, -3.70533)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/Room2/wall5" unique_id=1777725646]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 20.07, -4.76837e-07, 0, 9.01066)
+mesh = SubResource("BoxMesh_rqn35")
+surface_material_override/0 = SubResource("StandardMaterial3D_6mgdk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/Room2/wall5" unique_id=56484301]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 20, 0, 0, 9.011)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="wall6" type="StaticBody3D" parent="Office/Room2" unique_id=237301163]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 3.48703, 5.49, -3.70533)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/Room2/wall6" unique_id=915461465]
+transform = Transform3D(20.065, 0, 0, 0, 10, 0, 0, 0, 15.05, -6.09696, 0, 7.91155)
+mesh = SubResource("BoxMesh_rqn35")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/Room2/wall6" unique_id=1059152184]
+transform = Transform3D(20, 0, 2.27374e-13, 0, 10, 0, 0, 0, 15, -6.04194, 0, 7.84978)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="wall8" type="StaticBody3D" parent="Office" unique_id=1951977740]
+transform = Transform3D(0.806036, 0, 0.000296447, 0, 1, 0, -0.000238948, 0, 1, -6.63116, 5.49, -19.3972)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/wall8" unique_id=1730758519]
+transform = Transform3D(12.055, 0, 0, 0, 10, 0, 0, 0, 7.5, -9.61554, 0, 3.87087)
+mesh = SubResource("BoxMesh_rqn35")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/wall8" unique_id=278832916]
+transform = Transform3D(12, 0, 0, 0, 10, 0, 0, 0, 7.5, -9.85555, 0, 3.61327)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="Room3" type="Node3D" parent="Office" unique_id=1455396588]
+transform = Transform3D(-0.806036, 0, -0.0002966, 0, 1, 0, 0.000239069, 0, -1, -3.81474, 0, 0.000671387)
+
+[node name="Glasses" type="Node3D" parent="Office/Room3" unique_id=1270110973]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 0.95, 0, 0, -0.28775)
+
+[node name="GlassWall" parent="Office/Room3/Glasses" unique_id=680875674 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -4.87218)
+
+[node name="GlassWall2" parent="Office/Room3/Glasses" unique_id=1228526038 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -6.3438)
+
+[node name="GlassWall3" parent="Office/Room3/Glasses" unique_id=2070162010 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -7.80984)
+
+[node name="GlassWall4" parent="Office/Room3/Glasses" unique_id=369163853 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -9.2747)
+
+[node name="GlassWall5" parent="Office/Room3/Glasses" unique_id=1315393167 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -10.7192)
+
+[node name="GlassWall6" parent="Office/Room3/Glasses" unique_id=1461429154 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -12.165)
+
+[node name="GlassWall7" parent="Office/Room3/Glasses" unique_id=1083074516 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -13.6149)
+
+[node name="GlassWall8" parent="Office/Room3/Glasses" unique_id=364160529 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -15.0791)
+
+[node name="GlassWall9" parent="Office/Room3/Glasses" unique_id=1156990133 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -16.5219)
+
+[node name="Door" parent="Office/Room3" unique_id=1091933800 instance=ExtResource("4_2cqdq")]
+transform = Transform3D(1, 0, 0, 0, 3.34, 0, 0, 0, 1.4, -0.934547, 5.47011, -17.9589)
+
+[node name="wall5" type="StaticBody3D" parent="Office/Room3" unique_id=812008036]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5.49, -3.70533)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/Room3/wall5" unique_id=1652806743]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 20.07, -4.76837e-07, 0, 9.01066)
+mesh = SubResource("BoxMesh_rqn35")
+surface_material_override/0 = SubResource("StandardMaterial3D_fa6e4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/Room3/wall5" unique_id=215640261]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 20, 0, 0, 9.011)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="wall6" type="StaticBody3D" parent="Office/Room3" unique_id=1207316623]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 3.48703, 5.49, -3.70533)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/Room3/wall6" unique_id=484090263]
+transform = Transform3D(20.065, 0, 0, 0, 10, 0, 0, 0, 15.05, -6.09696, 0, 7.91155)
+mesh = SubResource("BoxMesh_rqn35")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/Room3/wall6" unique_id=1506896819]
+transform = Transform3D(20, 0, 2.27374e-13, 0, 10, 0, 0, 0, 15, -6.04194, 0, 7.84978)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="Room4" type="Node3D" parent="Office" unique_id=1214735030]
+transform = Transform3D(-0.806036, 0, -0.0002966, 0, 1, 0, 0.000239069, 0, -1, -3.81946, 0, -15.9091)
+
+[node name="Glasses" type="Node3D" parent="Office/Room4" unique_id=2146578780]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 0.95, 0, 0, -0.28775)
+
+[node name="GlassWall" parent="Office/Room4/Glasses" unique_id=251132993 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -4.87218)
+
+[node name="GlassWall2" parent="Office/Room4/Glasses" unique_id=57184713 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -6.3438)
+
+[node name="GlassWall3" parent="Office/Room4/Glasses" unique_id=648459265 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -7.80984)
+
+[node name="GlassWall4" parent="Office/Room4/Glasses" unique_id=2019405169 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -9.2747)
+
+[node name="GlassWall5" parent="Office/Room4/Glasses" unique_id=1925985332 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -10.7192)
+
+[node name="GlassWall6" parent="Office/Room4/Glasses" unique_id=1834953480 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -12.165)
+
+[node name="GlassWall7" parent="Office/Room4/Glasses" unique_id=275405910 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -13.6149)
+
+[node name="GlassWall8" parent="Office/Room4/Glasses" unique_id=1254502762 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -15.0791)
+
+[node name="GlassWall9" parent="Office/Room4/Glasses" unique_id=1704017550 instance=ExtResource("3_5tbpe")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -0.923873, 0.260475, -16.5219)
+
+[node name="Door" parent="Office/Room4" unique_id=313301381 instance=ExtResource("4_2cqdq")]
+transform = Transform3D(1, 0, 0, 0, 3.34, 0, 0, 0, 1.4, -0.934547, 5.47011, -17.9589)
+
+[node name="wall5" type="StaticBody3D" parent="Office/Room4" unique_id=1539563802]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5.49, -3.70533)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/Room4/wall5" unique_id=1934890869]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 20.07, -4.76837e-07, 0, 9.01066)
+mesh = SubResource("BoxMesh_rqn35")
+surface_material_override/0 = SubResource("StandardMaterial3D_q7r2h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/Room4/wall5" unique_id=862090633]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 20, 0, 0, 9.011)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="wall6" type="StaticBody3D" parent="Office/Room4" unique_id=1016347395]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 3.48703, 5.49, -3.70533)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Office/Room4/wall6" unique_id=963675444]
+transform = Transform3D(20.065, 0, 0, 0, 10, 0, 0, 0, 15.05, -6.09696, 0, 7.91155)
+mesh = SubResource("BoxMesh_rqn35")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/Room4/wall6" unique_id=1150647567]
+transform = Transform3D(20, 0, 2.27374e-13, 0, 10, 0, 0, 0, 15, -6.04194, 0, 7.84978)
+shape = SubResource("BoxShape3D_dk3m8")
+
+[node name="Elevator" parent="." unique_id=598298234 instance=ExtResource("5_rbxts")]
+transform = Transform3D(0.806036, 0, 0, 0, 1, 0, 0, 0, 1.27, 7.5294, 2.75555, 15.8818)
+
+[node name="Elevator2" parent="." unique_id=1829114678 instance=ExtResource("5_rbxts")]
+transform = Transform3D(-0.806036, 0, -0.000376675, 0, 1, 0, 0.000239065, 0, -1.27, -7.71077, 2.75555, -15.88)
+
+[node name="ROOF" type="MeshInstance3D" parent="." unique_id=1966587162]
+transform = Transform3D(-20, 8.74228e-08, 0, -1.74846e-06, -1, 0, 0, 0, 20, 0, 5.47628, 0)
+mesh = SubResource("PlaneMesh_rbxts")
