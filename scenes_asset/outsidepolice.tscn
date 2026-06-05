@@ -3,7 +3,7 @@
 [ext_resource type="Material" uid="uid://c4455dwnqaxwm" path="res://Echoes-of-the-Unseen-Restart/textures/graywall.tres" id="1_0a0vm"]
 [ext_resource type="Material" uid="uid://d2yihmsxddv4i" path="res://Echoes-of-the-Unseen-Restart/textures/glass_wall.tres" id="2_cvmct"]
 [ext_resource type="Material" uid="uid://biq8atp6wpdye" path="res://Echoes-of-the-Unseen-Restart/textures/redish.tres" id="3_q1d1w"]
-[ext_resource type="ArrayMesh" uid="uid://cfrsjmgrndsfa" path="res://Echoes-of-the-Unseen-Restart/mesh_library/police.res" id="4_cvmct"]
+[ext_resource type="ArrayMesh" uid="uid://drv1djj15q8dt" path="res://Echoes-of-the-Unseen-Restart/mesh_library/police.res" id="4_cvmct"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i1kdv"]
 
