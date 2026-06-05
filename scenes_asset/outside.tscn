@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://cha070negw6mu"]
 
-[ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/vhs_shader.tscn" id="1_obt5n"]
 [ext_resource type="Texture2D" uid="uid://b16jsvyv2yuk4" path="res://Echoes-of-the-Unseen-Restart/asset_import/road2.jpg" id="3_7p8gm"]
 [ext_resource type="Texture2D" uid="uid://dq18uxfbyu3k4" path="res://Echoes-of-the-Unseen-Restart/asset_import/pavement.jpg" id="4_xpri4"]
 [ext_resource type="PackedScene" uid="uid://pxdnqj40kjef" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/lamppost.tscn" id="5_72avq"]
@@ -151,8 +150,6 @@ emission_energy_multiplier = 3.42
 
 [node name="Outside" type="Node3D" unique_id=1388615587]
 
-[node name="VHS_Shader" parent="." unique_id=1515401706 instance=ExtResource("1_obt5n")]
-
 [node name="player" parent="." unique_id=1393316063 instance=ExtResource("5_mf1ic")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06292, 0)
 
@@ -194,7 +191,7 @@ transform = Transform3D(5, 0, 0, 0, 0.205, 0, 0, 0, 10, 0, 0, 0)
 shape = SubResource("BoxShape3D_ku5i6")
 
 [node name="pavement" type="StaticBody3D" parent="Roads" unique_id=815594403]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -0.18472767, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Roads/pavement" unique_id=1944723707]
 transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
@@ -206,7 +203,7 @@ transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
 shape = SubResource("BoxShape3D_nnj4j")
 
 [node name="pavement2" type="StaticBody3D" parent="Roads" unique_id=469126200]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -0.18472767, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Roads/pavement2" unique_id=735468462]
 transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
@@ -268,7 +265,7 @@ transform = Transform3D(5, 0, 0, 0, 0.205, 0, 0, 0, 10, 0, 0, 0)
 shape = SubResource("BoxShape3D_ku5i6")
 
 [node name="pavement3" type="StaticBody3D" parent="Roads" unique_id=936979175]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 30)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -0.18472767, 30)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Roads/pavement3" unique_id=798757371]
 transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
@@ -280,7 +277,7 @@ transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
 shape = SubResource("BoxShape3D_nnj4j")
 
 [node name="pavement4" type="StaticBody3D" parent="Roads" unique_id=429317194]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 30)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -0.18472767, 30)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Roads/pavement4" unique_id=1294522628]
 transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
@@ -292,7 +289,7 @@ transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
 shape = SubResource("BoxShape3D_nnj4j")
 
 [node name="lamppost2" parent="Roads" unique_id=2083842057 instance=ExtResource("5_72avq")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.75, 3.125, 29.9336)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.75, 2.9402723, 29.9336)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Roads/lamppost2" unique_id=404012867]
 transform = Transform3D(0.333333, 0, 0, 0, -1.45705e-08, 0.333333, 0, -0.333333, -1.45705e-08, -0.165503, 0.532664, 0)
@@ -306,7 +303,7 @@ spot_range = 5.46773
 spot_angle = 32.8651
 
 [node name="lamppost3" parent="Roads" unique_id=1050794169 instance=ExtResource("5_72avq")]
-transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -5.25, 3.125, 15)
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -5.25, 2.9402723, 15)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Roads/lamppost3" unique_id=1615058005]
 transform = Transform3D(0.333333, 0, 0, 0, -1.45705e-08, 0.333333, 0, -0.333333, -1.45705e-08, -0.165503, 0.532664, 0)
@@ -356,7 +353,7 @@ transform = Transform3D(5, 0, 0, 0, 0.205, 0, 0, 0, 10, 0, 0, 0)
 shape = SubResource("BoxShape3D_ku5i6")
 
 [node name="pavement5" type="StaticBody3D" parent="Roads" unique_id=1014089354]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 60)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -0.18472767, 60)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Roads/pavement5" unique_id=1137296728]
 transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
@@ -368,7 +365,7 @@ transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
 shape = SubResource("BoxShape3D_nnj4j")
 
 [node name="pavement6" type="StaticBody3D" parent="Roads" unique_id=1793233956]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 60)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -0.18472767, 60)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Roads/pavement6" unique_id=545846910]
 transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
@@ -380,7 +377,7 @@ transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
 shape = SubResource("BoxShape3D_nnj4j")
 
 [node name="lamppost4" parent="Roads" unique_id=1245080233 instance=ExtResource("5_72avq")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.75, 3.125, 60)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.75, 2.9402723, 60)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Roads/lamppost4" unique_id=1914515158]
 transform = Transform3D(0.333333, 0, 0, 0, -1.45705e-08, 0.333333, 0, -0.333333, -1.45705e-08, -0.165503, 0.532664, 0)
@@ -394,7 +391,7 @@ spot_range = 5.46773
 spot_angle = 32.8651
 
 [node name="lamppost5" parent="Roads" unique_id=471076780 instance=ExtResource("5_72avq")]
-transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -5.25, 3.125, 45)
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -5.25, 2.9402723, 45)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Roads/lamppost5" unique_id=1237514294]
 transform = Transform3D(0.333333, 0, 0, 0, -1.45705e-08, 0.333333, 0, -0.333333, -1.45705e-08, -0.165503, 0.532664, 0)
@@ -444,7 +441,7 @@ transform = Transform3D(5, 0, 0, 0, 0.205, 0, 0, 0, 10, 0, 0, 0)
 shape = SubResource("BoxShape3D_ku5i6")
 
 [node name="pavement7" type="StaticBody3D" parent="Roads" unique_id=1769200214]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -30)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -0.18472767, -30)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Roads/pavement7" unique_id=432619321]
 transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
@@ -456,7 +453,7 @@ transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
 shape = SubResource("BoxShape3D_nnj4j")
 
 [node name="pavement8" type="StaticBody3D" parent="Roads" unique_id=1733975990]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -30)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -0.18472767, -30)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Roads/pavement8" unique_id=1314178320]
 transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
@@ -468,7 +465,7 @@ transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
 shape = SubResource("BoxShape3D_nnj4j")
 
 [node name="lamppost6" parent="Roads" unique_id=798508431 instance=ExtResource("5_72avq")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.75, 3.125, -30)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.75, 2.9402723, -30)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Roads/lamppost6" unique_id=2079676302]
 transform = Transform3D(0.333333, 0, 0, 0, -1.45705e-08, 0.333333, 0, -0.333333, -1.45705e-08, -0.165503, 0.532664, 0)
@@ -482,7 +479,7 @@ spot_range = 5.46773
 spot_angle = 32.8651
 
 [node name="lamppost7" parent="Roads" unique_id=2092645921 instance=ExtResource("5_72avq")]
-transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -5.25, 3.125, -15)
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -5.25, 2.9402723, -15)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Roads/lamppost7" unique_id=909298171]
 transform = Transform3D(0.333333, 0, 0, 0, -1.45705e-08, 0.333333, 0, -0.333333, -1.45705e-08, -0.165503, 0.532664, 0)
@@ -512,7 +509,7 @@ light_color = Color(0.808594, 0.778193, 0.454834, 1)
 light_energy = 0.25
 
 [node name="FLOOR" type="StaticBody3D" parent="." unique_id=1858329464]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.025, 15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 15)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="FLOOR" unique_id=1182485091]
 transform = Transform3D(100, 0, 0, 0, 0.1, 0, 0, 0, 100, 0, 0, 0)
