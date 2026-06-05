@@ -1,25 +1,31 @@
 [gd_scene format=3 uid="uid://dvg8hnnnr5fec"]
 
-[ext_resource type="Script" uid="uid://ytsd06nxfwpc" path="res://Echoes-of-the-Unseen-Restart/scripts/player.gd" id="1_4flbx"]
-[ext_resource type="Script" uid="uid://d68swnf731rq" path="res://Echoes-of-the-Unseen-Restart/scripts/fp_cam.gd" id="2_onrkg"]
+[ext_resource type="Script" uid="uid://b8q8qwei1yqip" path="res://Echoes-of-the-Unseen-Restart/scripts/mouse_capture.gd" id="1_klxr0"]
+[ext_resource type="Script" uid="uid://bbhv3d12deytc" path="res://Echoes-of-the-Unseen-Restart/scripts/player_controller.gd" id="1_xbrla"]
+[ext_resource type="Script" uid="uid://bdyrmul24awjk" path="res://Echoes-of-the-Unseen-Restart/scripts/camera_controller.gd" id="2_w3o16"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sh265"]
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_85jef"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_4flbx"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xbrla"]
 
-[node name="player" type="CharacterBody3D" unique_id=1396868878]
-script = ExtResource("1_4flbx")
+[node name="PlayerController" type="CharacterBody3D" unique_id=1396868878]
+script = ExtResource("1_xbrla")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1435961111]
-transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, 0)
-shape = SubResource("CapsuleShape3D_sh265")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1310487912]
+mesh = SubResource("CapsuleMesh_85jef")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=539937331]
-transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, 0)
-mesh = SubResource("CapsuleMesh_4flbx")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1094141929]
+shape = SubResource("CapsuleShape3D_xbrla")
 
-[node name="head" type="Node3D" parent="." unique_id=219248134]
-transform = Transform3D(0.16, 0, 0, 0, 0.3, 0, 0, 0, 0.5, 0, 0.657789, 0.186225)
+[node name="CameraController" type="Node3D" parent="." unique_id=219248134]
+transform = Transform3D(0.16, 0, 0, 0, 0.3, 0, 0, 0, 0.5, 0, 0.5, 0)
+script = ExtResource("2_w3o16")
+debug = null
 
-[node name="Camera3D" type="Camera3D" parent="head" unique_id=645588391]
-script = ExtResource("2_onrkg")
+[node name="Camera3D" type="Camera3D" parent="CameraController" unique_id=645588391]
+fov = 90.0
+
+[node name="Components" type="Node" parent="." unique_id=233808442]
+
+[node name="MouseCapture" type="Node" parent="Components" unique_id=1859941990]
+script = ExtResource("1_klxr0")
