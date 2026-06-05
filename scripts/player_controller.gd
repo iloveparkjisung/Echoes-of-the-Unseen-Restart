@@ -2,7 +2,7 @@ class_name PlayerController extends CharacterBody3D
 
 var _input_dir : Vector2 = Vector2.ZERO
 var _movement_velocity : Vector3 = Vector3.ZERO
-var speed : float = 0.0
+var speed : float = 1
 @export var acceleration : float = 0.1
 @export var deceleration : float = 0.2
 
