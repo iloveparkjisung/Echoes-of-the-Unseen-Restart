@@ -86,11 +86,6 @@ light_specular = 0.0
 light_bake_mode = 1
 omni_range = 11.8618
 
-[node name="player" parent="." unique_id=936025805 instance=ExtResource("1_dk3m8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.149501, 1.40131, 0)
-camera_sens = null
-cameraLimitDeg = null
-
 [node name="Office" type="Node3D" parent="." unique_id=2127870783]
 transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0)
 
@@ -418,3 +413,6 @@ transform = Transform3D(-0.806036, 0, -0.000376675, 0, 1, 0, 0.000239065, 0, -1.
 [node name="ROOF" type="MeshInstance3D" parent="." unique_id=1966587162]
 transform = Transform3D(-20, 8.74228e-08, 0, -1.74846e-06, -1, 0, 0, 0, 20, 0, 5.47628, 0)
 mesh = SubResource("PlaneMesh_rbxts")
+
+[node name="PlayerController" parent="." unique_id=1396868878 instance=ExtResource("1_dk3m8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8401647, 0)

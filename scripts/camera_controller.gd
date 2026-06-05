@@ -10,6 +10,10 @@ class_name CamerController extends Node3D
 
 var _rotation : Vector3
 
+func _process(delta: float) -> void:
+	update_camera_rotation(component_mouse_capture._mouse_input)
+
+
 func update_camera_rotation(input: Vector2) -> void:
 	_rotation.x += input.y
 	_rotation.y += input.x
@@ -19,8 +23,4 @@ func update_camera_rotation(input: Vector2) -> void:
 	
 	transform.basis = Basis.from_euler(_camera_rotation)
 	
-	rotation.z = 0.0
-
-func update_camera_height(delta: float, direction: int) -> void:
-	if position.y >= crouch_offset and position.y <= DEFAULT_HEIGHT:
-		position.y = clampf(position.y + (crouch_speed *  direction) * delta, crouch_offset, DEFAULT_HEIGHT)
+	_rotation.z = 0.0
