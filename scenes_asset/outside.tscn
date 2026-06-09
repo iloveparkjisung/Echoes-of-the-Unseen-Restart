@@ -701,5 +701,5 @@ shape = SubResource("BoxShape3D_nxbbw")
 [node name="outsidepolice" parent="." unique_id=1978004551 instance=ExtResource("14_7p8gm")]
 transform = Transform3D(-1.8358781e-08, 0, 0.336, 0, 0.33799994, 0, -0.41999996, 0, -1.4687026e-08, -18.107323, 3.388113, 32.333115)
 
-[node name="Door" parent="outsidepolice" unique_id=1484513123 instance=ExtResource("14_xpri4")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 0.10000001, -0.066, -6.493, 19.853)
+[node name="Door2" parent="outsidepolice" unique_id=1484513123 instance=ExtResource("14_xpri4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, -7.1054274e-15, 0, 0.10000001, -0.066, -6.493, 14.692)
