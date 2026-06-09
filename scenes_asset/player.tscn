@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b8q8qwei1yqip" path="res://Echoes-of-the-Unseen-Restart/scripts/mouse_capture.gd" id="1_klxr0"]
 [ext_resource type="Script" uid="uid://bbhv3d12deytc" path="res://Echoes-of-the-Unseen-Restart/scripts/player_controller.gd" id="1_xbrla"]
 [ext_resource type="Script" uid="uid://bdyrmul24awjk" path="res://Echoes-of-the-Unseen-Restart/scripts/camera_controller.gd" id="2_w3o16"]
+[ext_resource type="PackedScene" uid="uid://cgx37cppxkltb" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/vhs_shader.tscn" id="4_w3o16"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_85jef"]
 
@@ -30,3 +31,5 @@ fov = 90.0
 
 [node name="MouseCapture" type="Node" parent="Components" unique_id=1859941990]
 script = ExtResource("1_klxr0")
+
+[node name="VHS_Shader" parent="." unique_id=505571433 instance=ExtResource("4_w3o16")]
