@@ -10,6 +10,7 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xbrla"]
 
 [node name="PlayerController" type="CharacterBody3D" unique_id=1396868878]
+collision_mask = 2
 script = ExtResource("1_xbrla")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1310487912]

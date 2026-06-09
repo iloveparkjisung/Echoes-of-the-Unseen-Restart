@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/building_5.tscn" id="12_jekt8"]
 [ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/building_6.tscn" id="13_6075j"]
 [ext_resource type="PackedScene" uid="uid://cvpwbpckh4wdd" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/outsidepolice.tscn" id="14_7p8gm"]
+[ext_resource type="PackedScene" uid="uid://dco67i0m7vb6h" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/door.tscn" id="14_xpri4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pyvco"]
 albedo_texture = ExtResource("3_7p8gm")
@@ -139,14 +140,6 @@ points = PackedVector3Array(-6305.03, -5061.66, 3532.48, 5774.69, -5061.66, 3532
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_nxbbw"]
 size = Vector3(1, 1, 1.23926)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7p8gm"]
-albedo_color = Color(1, 1, 0.7254902, 1)
-emission_enabled = true
-emission = Color(0.641603, 0.6604677, 0.4343073, 1)
-emission_energy_multiplier = 3.42
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_xpri4"]
 
 [node name="Outside" type="Node3D" unique_id=1388615587]
 
@@ -708,7 +701,5 @@ shape = SubResource("BoxShape3D_nxbbw")
 [node name="outsidepolice" parent="." unique_id=1978004551 instance=ExtResource("14_7p8gm")]
 transform = Transform3D(-1.8358781e-08, 0, 0.336, 0, 0.33799994, 0, -0.41999996, 0, -1.4687026e-08, -18.107323, 3.388113, 32.333115)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="outsidepolice" unique_id=1093533313]
-transform = Transform3D(3.235, 7.1054274e-15, 0, 0, -1.4140633e-07, -3.2350001, -4.2632564e-14, 3.2350006, -1.4140636e-07, -0.06565094, -6.4932213, 19.853073)
-material_override = SubResource("StandardMaterial3D_7p8gm")
-mesh = SubResource("PlaneMesh_xpri4")
+[node name="Door" parent="outsidepolice" unique_id=1484513123 instance=ExtResource("14_xpri4")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 0.10000001, -0.066, -6.493, 19.853)

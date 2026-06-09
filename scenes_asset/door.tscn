@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dco67i0m7vb6h"]
+
+[ext_resource type="Script" uid="uid://bwirlhjcfqk7s" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/door.gd" id="1_m0411"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tsmxd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m0411"]
+emission_enabled = true
+emission = Color(0.59681284, 0.51969874, 0.34737128, 1)
+emission_energy_multiplier = 7.35
+
+[sub_resource type="BoxMesh" id="BoxMesh_4bv8e"]
+
+[node name="Door" type="Area3D" unique_id=1484513123]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 0.1, 0, 0, 0)
+script = ExtResource("1_m0411")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1335049798]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("BoxShape3D_tsmxd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=527663696]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_m0411")
+mesh = SubResource("BoxMesh_4bv8e")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1916458715]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1731147737]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Press 'E' to enter"
