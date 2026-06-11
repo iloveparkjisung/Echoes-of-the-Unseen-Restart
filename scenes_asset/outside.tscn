@@ -144,7 +144,7 @@ size = Vector3(1, 1, 1.23926)
 [node name="Outside" type="Node3D" unique_id=1388615587]
 
 [node name="player" parent="." unique_id=1393316063 instance=ExtResource("5_mf1ic")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06292, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.68916, 0)
 
 [node name="Roads" type="Node3D" parent="." unique_id=1520637651]
 
@@ -510,7 +510,7 @@ material_override = ExtResource("7_7p8gm")
 mesh = SubResource("BoxMesh_nnj4j")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="FLOOR" unique_id=1373801432]
-transform = Transform3D(100, 0, 0, 0, 0.1, 0, 0, 0, 100, 0, 0, 0)
+transform = Transform3D(100.000015, 0, 0, 0, 0.1, 0, 0, 0, 100.000015, 0, 0, 0)
 shape = SubResource("BoxShape3D_0b51g")
 debug_fill = false
 
@@ -702,4 +702,4 @@ shape = SubResource("BoxShape3D_nxbbw")
 transform = Transform3D(-1.8358781e-08, 0, 0.336, 0, 0.33799994, 0, -0.41999996, 0, -1.4687026e-08, -18.107323, 3.388113, 32.333115)
 
 [node name="Door2" parent="outsidepolice" unique_id=1484513123 instance=ExtResource("14_xpri4")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, -7.1054274e-15, 0, 0.10000001, -0.066, -6.493, 14.692)
+transform = Transform3D(3, 0, 8.881784e-16, 0, 3, 0, -1.4210855e-14, 0, 0.10000001, 0.048171997, -6.493, 21.403042)
