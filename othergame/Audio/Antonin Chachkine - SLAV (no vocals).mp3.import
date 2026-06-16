@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvu4t18jt56ey"
+path="res://.godot/imported/Antonin Chachkine - SLAV (no vocals).mp3-39931a94e8c99f4cdef20a24fbfbb20e.mp3str"
+
+[deps]
+
+source_file="res://Echoes-of-the-Unseen-Restart/othergame/Audio/Antonin Chachkine - SLAV (no vocals).mp3"
+dest_files=["res://.godot/imported/Antonin Chachkine - SLAV (no vocals).mp3-39931a94e8c99f4cdef20a24fbfbb20e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cuxcegdvkr73c"
+path="res://.godot/imported/Chase 3.mp3-1c255005d12b97b2c990e072a9c9b133.mp3str"
+
+[deps]
+
+source_file="res://Echoes-of-the-Unseen-Restart/othergame/Audio/Chase 3.mp3"
+dest_files=["res://.godot/imported/Chase 3.mp3-1c255005d12b97b2c990e072a9c9b133.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

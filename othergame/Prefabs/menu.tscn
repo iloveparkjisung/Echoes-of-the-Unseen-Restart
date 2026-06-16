@@ -1,0 +1,92 @@
+[gd_scene load_steps=3 format=3 uid="uid://w3bywrn6hqm0"]
+
+[ext_resource type="Script" uid="uid://dx1q67sh7oqxi" path="res://Scripts/menu.gd" id="1_034ct"]
+[ext_resource type="FontFile" uid="uid://2tpg78w68kae" path="res://0Fonts/VCR_OSD_MONO_1.001.ttf" id="2_t4ibc"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_034ct")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 11.0
+offset_top = 12.0
+offset_right = 628.0
+offset_bottom = 350.0
+color = Color(4.74088e-06, 0.376852, 0.0625795, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 13.0
+offset_top = 15.0
+offset_right = 628.0
+offset_bottom = 350.0
+color = Color(8.42288e-06, 0.56224, 0.113053, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 13.0
+offset_top = 36.0
+offset_right = 627.0
+offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("2_t4ibc")
+theme_override_font_sizes/font_size = 50
+text = "SETTINGS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -149.0
+offset_top = 93.0
+offset_right = 465.0
+offset_bottom = 137.0
+theme_override_fonts/font = ExtResource("2_t4ibc")
+theme_override_font_sizes/font_size = 30
+text = "SENSITIVITY:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+offset_left = -165.0
+offset_top = 168.0
+offset_right = 449.0
+offset_bottom = 212.0
+theme_override_fonts/font = ExtResource("2_t4ibc")
+theme_override_font_sizes/font_size = 30
+text = "VHS SHADER:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="."]
+offset_left = -158.0
+offset_top = 220.0
+offset_right = 456.0
+offset_bottom = 264.0
+theme_override_fonts/font = ExtResource("2_t4ibc")
+theme_override_font_sizes/font_size = 30
+text = "VHS OVERLAY:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="."]
+offset_left = 55.0
+offset_top = 137.0
+offset_right = 498.0
+offset_bottom = 153.0
+max_value = 3.0
+step = 0.1
+value = 0.5
+
+[node name="ShaderButton" type="CheckButton" parent="."]
+offset_left = 267.0
+offset_top = 179.0
+offset_right = 311.0
+offset_bottom = 203.0
+button_pressed = true
+
+[node name="OverlayButton" type="CheckButton" parent="."]
+offset_left = 267.0
+offset_top = 229.0
+offset_right = 311.0
+offset_bottom = 253.0
+button_pressed = true
+
+[connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="toggled" from="ShaderButton" to="." method="_on_shader_button_toggled"]
+[connection signal="toggled" from="OverlayButton" to="." method="_on_overlay_button_toggled"]

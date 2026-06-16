@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b451k7u7i7urt"]
+
+[ext_resource type="AudioStream" uid="uid://bw6bkatmmj88n" path="res://Audio/Door.mp3" id="1_p34qa"]
+
+[node name="TeleportAudio" type="AudioStreamPlayer3D"]
+stream = ExtResource("1_p34qa")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqgpu2adv58mw"]
+
+[ext_resource type="AudioStream" uid="uid://bpvvk8wyw15tu" path="res://Audio/Elevator.mp3" id="1_dqts6"]
+
+[node name="ElevatorAudio" type="AudioStreamPlayer3D"]
+stream = ExtResource("1_dqts6")

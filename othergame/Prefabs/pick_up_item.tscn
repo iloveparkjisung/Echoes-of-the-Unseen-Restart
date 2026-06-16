@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ye56dg26yyjn"]
+
+[ext_resource type="Script" uid="uid://t3hntsakv2eh" path="res://Scripts/pick_up_item.gd" id="1_q0ech"]
+
+[node name="PickUpItem" type="StaticBody3D" groups=["pickup"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.23768, 1.1415, -0.188753)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_q0ech")

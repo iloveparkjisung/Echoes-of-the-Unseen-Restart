@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dadpvrygb4ijj"]
+
+[ext_resource type="AudioStream" uid="uid://bw6bkatmmj88n" path="res://Audio/Door.mp3" id="1_gatpn"]
+
+[node name="AdvanceAudio" type="AudioStreamPlayer3D"]
+stream = ExtResource("1_gatpn")

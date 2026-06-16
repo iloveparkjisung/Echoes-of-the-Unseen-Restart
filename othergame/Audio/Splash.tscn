@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5ku4jf5mhl0y"]
+
+[ext_resource type="AudioStream" uid="uid://cbtolx2caella" path="res://Audio/splash-6213.mp3" id="1_xeo46"]
+
+[node name="Splash" type="AudioStreamPlayer3D"]
+stream = ExtResource("1_xeo46")

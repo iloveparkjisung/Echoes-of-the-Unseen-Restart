@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsu6usp7wjvae"]
+
+[ext_resource type="Script" uid="uid://bmiwc8msvig1t" path="res://Scripts/move_stuff_when_x.gd" id="1_fig0s"]
+
+[node name="MoveStuffWhenX" type="Node"]
+script = ExtResource("1_fig0s")

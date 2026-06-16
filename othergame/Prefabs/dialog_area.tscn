@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bknc7cb801hks"]
+
+[ext_resource type="Script" uid="uid://dtnq63rcxp6un" path="res://Scripts/dialog_area.gd" id="1_51xle"]
+
+[node name="DialogArea" type="Area3D"]
+script = ExtResource("1_51xle")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

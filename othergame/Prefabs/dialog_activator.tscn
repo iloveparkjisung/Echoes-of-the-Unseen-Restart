@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0vas3shwjkgc"]
+
+[ext_resource type="Script" uid="uid://c2sp7abfm8uay" path="res://Scripts/dialog_activator.gd" id="1_5hn6y"]
+
+[node name="DialogActivator" type="StaticBody3D" groups=["dialog"]]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_5hn6y")

@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://b16jsvyv2yuk4" path="res://Echoes-of-the-Unseen-Restart/asset_import/road2.jpg" id="3_7p8gm"]
 [ext_resource type="Texture2D" uid="uid://dq18uxfbyu3k4" path="res://Echoes-of-the-Unseen-Restart/asset_import/pavement.jpg" id="4_xpri4"]
 [ext_resource type="PackedScene" uid="uid://pxdnqj40kjef" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/lamppost.tscn" id="5_72avq"]
-[ext_resource type="PackedScene" uid="uid://dvg8hnnnr5fec" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/player.tscn" id="5_mf1ic"]
 [ext_resource type="Shader" path="res://Echoes-of-the-Unseen-Restart/shader/vhswiggle.gdshader" id="6_7vy4l"]
 [ext_resource type="Material" uid="uid://c4455dwnqaxwm" path="res://Echoes-of-the-Unseen-Restart/textures/graywall.tres" id="7_7p8gm"]
 [ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/building_1.tscn" id="8_pe4pk"]
@@ -14,10 +13,11 @@
 [ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/building_6.tscn" id="13_6075j"]
 [ext_resource type="PackedScene" uid="uid://cvpwbpckh4wdd" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/outsidepolice.tscn" id="14_7p8gm"]
 [ext_resource type="PackedScene" uid="uid://dco67i0m7vb6h" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/door.tscn" id="14_xpri4"]
-[ext_resource type="Texture2D" uid="uid://c3mlf1e1y0yhl" path="res://Echoes-of-the-Unseen-Restart/asset_import/othergame/House/House_Bush.png" id="15_xpri4"]
-[ext_resource type="Texture2D" uid="uid://c1t7i48anrci8" path="res://Echoes-of-the-Unseen-Restart/asset_import/othergame/House/House_Tree_05.png" id="16_qqvyd"]
-[ext_resource type="Texture2D" uid="uid://bie3k4vm0jty2" path="res://Echoes-of-the-Unseen-Restart/asset_import/othergame/House/House_Tree_04.png" id="17_pe4pk"]
-[ext_resource type="Texture2D" uid="uid://vhjkf4cl5r51" path="res://Echoes-of-the-Unseen-Restart/asset_import/othergame/House/House_Tree_03.png" id="18_wyy7l"]
+[ext_resource type="Texture2D" uid="uid://c3mlf1e1y0yhl" path="res://Echoes-of-the-Unseen-Restart/othergame/House/House_Bush.png" id="15_xpri4"]
+[ext_resource type="Texture2D" uid="uid://c1t7i48anrci8" path="res://Echoes-of-the-Unseen-Restart/othergame/House/House_Tree_05.png" id="16_qqvyd"]
+[ext_resource type="Texture2D" uid="uid://bie3k4vm0jty2" path="res://Echoes-of-the-Unseen-Restart/othergame/House/House_Tree_04.png" id="17_pe4pk"]
+[ext_resource type="PackedScene" uid="uid://bmm0yijljsnga" path="res://Echoes-of-the-Unseen-Restart/othergame/Prefabs/player.tscn" id="18_qqvyd"]
+[ext_resource type="Texture2D" uid="uid://vhjkf4cl5r51" path="res://Echoes-of-the-Unseen-Restart/othergame/House/House_Tree_03.png" id="18_wyy7l"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pyvco"]
 albedo_texture = ExtResource("3_7p8gm")
@@ -302,9 +302,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_yfnkp")
 
 [node name="Outside" type="Node3D" unique_id=1388615587]
-
-[node name="player" parent="." unique_id=1393316063 instance=ExtResource("5_mf1ic")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.68916, 0)
 
 [node name="Roads" type="Node3D" parent="." unique_id=1520637651]
 
@@ -900,6 +897,18 @@ mesh = SubResource("ArrayMesh_co362")
 transform = Transform3D(-0.2976124, 5.988275, -2.114966e-06, -5.360544e-07, -2.1442174e-06, -5.9956675, 5.9882755, 0.29761237, -6.418282e-07, -7.8572474, 0, 23.684397)
 mesh = SubResource("ArrayMesh_co362")
 
+[node name="Tree_04_7" type="MeshInstance3D" parent="." unique_id=1553759747]
+transform = Transform3D(-0.2976124, 5.988275, -2.114966e-06, -5.360544e-07, -2.1442174e-06, -5.9956675, 5.9882755, 0.29761237, -6.418282e-07, -11.075052, 0, -13.232952)
+mesh = SubResource("ArrayMesh_co362")
+
+[node name="Tree_04_5" type="MeshInstance3D" parent="." unique_id=111189112]
+transform = Transform3D(-0.2976124, 5.988275, -2.114966e-06, -5.360544e-07, -2.1442174e-06, -5.9956675, 5.9882755, 0.29761237, -6.418282e-07, 8.649725, 0, 31.426655)
+mesh = SubResource("ArrayMesh_co362")
+
+[node name="Tree_04_6" type="MeshInstance3D" parent="." unique_id=656693591]
+transform = Transform3D(2.361944, 5.5108285, 2.40886e-07, 0, 2.6207888e-07, -5.9956675, 5.510829, -2.3619437, -1.0324387e-07, -9.862452, 0, 13.228363)
+mesh = SubResource("ArrayMesh_co362")
+
 [node name="Tree_04_3" type="MeshInstance3D" parent="." unique_id=392164801]
 transform = Transform3D(-0.2976124, 5.988275, -2.114966e-06, -5.360544e-07, -2.1442174e-06, -5.9956675, 5.9882755, 0.29761237, -6.418282e-07, -7.8572474, 0, 44.89337)
 mesh = SubResource("ArrayMesh_co362")
@@ -911,3 +920,5 @@ mesh = SubResource("ArrayMesh_co362")
 [node name="Tree_03_1" type="MeshInstance3D" parent="." unique_id=1402925945]
 transform = Transform3D(-0.9915374, 0, -0.79326636, 0, 1.2698103, 0, 0.79326636, 0, -0.9915374, -11.521315, -0.0026754886, 40.842205)
 mesh = SubResource("ArrayMesh_jekt8")
+
+[node name="Player" parent="." unique_id=1513402906 instance=ExtResource("18_qqvyd")]

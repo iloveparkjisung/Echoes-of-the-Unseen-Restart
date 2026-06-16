@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=4 uid="uid://dhhr78yg4inum"]
+
+[ext_resource type="Script" uid="uid://7ad1dsw1kvd7" path="res://Scripts/LightswitchBody.cs" id="1_mb4v4"]
+[ext_resource type="Texture2D" uid="uid://5sxrbvqg8ykf" path="res://House/House_Light_switch.png" id="2_jbtp5"]
+[ext_resource type="AudioStream" uid="uid://ln8rajaiv7cb" path="res://Audio/Lightswitch.mp3" id="3_vhtpu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5fhsh"]
+resource_name = "Light_switch"
+cull_mode = 2
+albedo_texture = ExtResource("2_jbtp5")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wipo6"]
+_surfaces = [{
+"aabb": AABB(-1, -1.7382, -0.0683811, 2, 3.47639, 0.370858),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAADAAEAAAACAAMAAgAHAAMAAgAGAAcABgAFAAcABgAEAAUAAgAEAAYAAgAAAAQABwABAAMABwAFAAEA"),
+"name": "Light_switch",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP////8AAAAAAAAAAAAAAAD//wAAAAD//wAA//8AAP///////wAA//8AAAAAAAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ui22d"]
+resource_name = "House_Light_switch_003"
+_surfaces = [{
+"aabb": AABB(-1, -1.7382, -0.0683811, 2, 3.47639, 0.370858),
+"attribute_data": PackedByteArray("Z+KFo2fiLfBn4oWjZ+Lbjv9///9R9IWjUfQt8P9/CX9R9IWjUfTbjmfig9tn4i3wZ+KD22fi247/////UfSD21H0LfD//wl/UfSD21H0244="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AQAJAAMAAQAGAAkABAARAAcABAAOABEAEAANABMAEAALAA0ABQAKAA8ABQAAAAoAEgACAAgAEgAMAAIA"),
+"material": SubResource("StandardMaterial3D_5fhsh"),
+"name": "Light_switch",
+"primitive": 3,
+"uv_scale": Vector4(2, 2.01511, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AAAAAP//qioAAAAA//8AAAAA/////1TVAAD/////AAAAAAAAAAAAAAAAAAAAAKoqAAAAAAAAAAAAAP//AAAAAAAA//8AAFTVAAD//wAAAAD//wAA//+qKv//AAD///+/////////VNX/////////v///AAAAAAAA//8AAAAAqir//wAAAAD/v/////8AAAAA/////wAAVNX/////AAD/v1RVVFX/P/9/VNWqKv8//3////9/VFVUVf8//3////9/VNWqKv8//39UVVRV/38AAFTVqir/fwAA////f1RVVFX/fwAA////f1TVqir/fwAA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_wipo6")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ey0t8"]
+size = Vector3(2.05847, 3.23364, 1)
+
+[node name="LightswitchBody" type="StaticBody3D" node_paths=PackedStringArray("audio") groups=["switch"]]
+transform = Transform3D(0.0552513, 6.30105e-09, 0.000111126, -7.79946e-17, 0.0552514, -3.13275e-06, -0.000111126, 3.13274e-06, 0.0552513, 0.718304, 1.67827, 4.18851)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_mb4v4")
+audio = NodePath("AudioStreamPlayer3D")
+
+[node name="LightSwitch" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, -7.10543e-15, 0, 7.10543e-15, 1, -7.27596e-12, 0, -3.63798e-12, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_ui22d")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, -2.24532e-12, 0, 9.59233e-13, 1, -1.10958e-09, 0, -1.81899e-11, 1, 0.014101, 0.0506573, 0)
+shape = SubResource("BoxShape3D_ey0t8")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_vhtpu")

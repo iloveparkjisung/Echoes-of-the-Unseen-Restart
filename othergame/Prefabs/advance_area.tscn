@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvp03nq163u72"]
+
+[ext_resource type="Script" uid="uid://dtfwdsxeuafmh" path="res://Scripts/advance_area.gd" id="1_wfv6f"]
+[ext_resource type="PackedScene" uid="uid://dadpvrygb4ijj" path="res://Audio/advance_audio.tscn" id="2_ulmdb"]
+
+[node name="Advance" type="StaticBody3D" groups=["advance"]]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_wfv6f")
+
+[node name="AdvanceAudio" parent="." instance=ExtResource("2_ulmdb")]

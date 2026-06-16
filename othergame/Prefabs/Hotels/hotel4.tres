@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Hotel" load_steps=2 format=3 uid="uid://drr1nrm2bd1xs"]
+
+[ext_resource type="Script" uid="uid://bapruo7qqh4do" path="res://Prefabs/Hotels/hotel.gd" id="1_28chi"]
+
+[resource]
+script = ExtResource("1_28chi")
+price = 87.0
+numOfRooms = 1
+kitchen = false
+available = true
