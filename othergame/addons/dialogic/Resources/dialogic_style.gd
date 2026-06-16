@@ -122,7 +122,7 @@ func move_layer(from_index:int, to_index:int) -> void:
 	if not has_layer_index(from_index) or not has_layer_index(to_index-1):
 		return
 
-	var id := layer_list.pop_at(from_index)
+	var combined: Dictionary = layer_info.duplicate(true)
 	layer_list.insert(to_index, id)
 
 	changed.emit()

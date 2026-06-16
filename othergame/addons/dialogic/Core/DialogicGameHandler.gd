@@ -95,58 +95,58 @@ signal text_signal(argument: String)
 # Careful, this section is repopulated automatically at certain moments.
 #region SUBSYSTEMS
 
-var Audio := preload("res://addons/dialogic/Modules/Audio/subsystem_audio.gd").new():
+var Audio := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Audio/subsystem_audio.gd").new():
 	get: return get_subsystem("Audio")
 
-var Backgrounds := preload("res://addons/dialogic/Modules/Background/subsystem_backgrounds.gd").new():
+var Backgrounds := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Background/subsystem_backgrounds.gd").new():
 	get: return get_subsystem("Backgrounds")
 
-var Portraits := preload("res://addons/dialogic/Modules/Character/subsystem_portraits.gd").new():
+var Portraits := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Character/subsystem_portraits.gd").new():
 	get: return get_subsystem("Portraits")
 
-var PortraitContainers := preload("res://addons/dialogic/Modules/Character/subsystem_containers.gd").new():
+var PortraitContainers := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Character/subsystem_containers.gd").new():
 	get: return get_subsystem("PortraitContainers")
 
-var Choices := preload("res://addons/dialogic/Modules/Choice/subsystem_choices.gd").new():
+var Choices := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Choice/subsystem_choices.gd").new():
 	get: return get_subsystem("Choices")
 
-var Expressions := preload("res://addons/dialogic/Modules/Core/subsystem_expression.gd").new():
+var Expressions := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Core/subsystem_expression.gd").new():
 	get: return get_subsystem("Expressions")
 
-var Animations := preload("res://addons/dialogic/Modules/Core/subsystem_animation.gd").new():
+var Animations := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Core/subsystem_animation.gd").new():
 	get: return get_subsystem("Animations")
 
-var Inputs := preload("res://addons/dialogic/Modules/Core/subsystem_input.gd").new():
+var Inputs := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Core/subsystem_input.gd").new():
 	get: return get_subsystem("Inputs")
 
-var Glossary := preload("res://addons/dialogic/Modules/Glossary/subsystem_glossary.gd").new():
+var Glossary := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Glossary/subsystem_glossary.gd").new():
 	get: return get_subsystem("Glossary")
 
-var History := preload("res://addons/dialogic/Modules/History/subsystem_history.gd").new():
+var History := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/History/subsystem_history.gd").new():
 	get: return get_subsystem("History")
 
-var Jump := preload("res://addons/dialogic/Modules/Jump/subsystem_jump.gd").new():
+var Jump := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Jump/subsystem_jump.gd").new():
 	get: return get_subsystem("Jump")
 
-var Save := preload("res://addons/dialogic/Modules/Save/subsystem_save.gd").new():
+var Save := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Save/subsystem_save.gd").new():
 	get: return get_subsystem("Save")
 
-var Settings := preload("res://addons/dialogic/Modules/Settings/subsystem_settings.gd").new():
+var Settings := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Settings/subsystem_settings.gd").new():
 	get: return get_subsystem("Settings")
 
-var Styles := preload("res://addons/dialogic/Modules/Style/subsystem_styles.gd").new():
+var Styles := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Style/subsystem_styles.gd").new():
 	get: return get_subsystem("Styles")
 
-var Text := preload("res://addons/dialogic/Modules/Text/subsystem_text.gd").new():
+var Text := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Text/subsystem_text.gd").new():
 	get: return get_subsystem("Text")
 
-var TextInput := preload("res://addons/dialogic/Modules/TextInput/subsystem_text_input.gd").new():
+var TextInput := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/TextInput/subsystem_text_input.gd").new():
 	get: return get_subsystem("TextInput")
 
-var VAR := preload("res://addons/dialogic/Modules/Variable/subsystem_variables.gd").new():
+var VAR := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Variable/subsystem_variables.gd").new():
 	get: return get_subsystem("VAR")
 
-var Voice := preload("res://addons/dialogic/Modules/Voice/subsystem_voice.gd").new():
+var Voice := preload("res://Echoes-of-the-Unseen-Restart/othergame/addons/dialogic/Modules/Voice/subsystem_voice.gd").new():
 	get: return get_subsystem("Voice")
 
 #endregion
