@@ -2,12 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://dvg8hnnnr5fec" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/player.tscn" id="1_dk3m8"]
 [ext_resource type="PackedScene" uid="uid://bko6478emsd1k" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/lighting.tscn" id="2_ow0sv"]
-[ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/glass_wall.tscn" id="3_5tbpe"]
+[ext_resource type="PackedScene" uid="uid://bygktcatyblu4" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/glass_wall.tscn" id="3_5tbpe"]
 [ext_resource type="Texture2D" uid="uid://dtp6i5oj843eg" path="res://Echoes-of-the-Unseen-Restart/asset_import/carpet.jpg" id="3_bx1ou"]
-[ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/door.tscn" id="4_2cqdq"]
+[ext_resource type="PackedScene" uid="uid://fft6v5pe4pwh" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/door.tscn" id="4_2cqdq"]
 [ext_resource type="Texture2D" uid="uid://coicphsv466jv" path="res://Echoes-of-the-Unseen-Restart/asset_import/wood2.jpg" id="4_i4pnx"]
 [ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/elevator.tscn" id="5_rbxts"]
 [ext_resource type="Texture2D" uid="uid://bwpxo8ji6u3fk" path="res://Echoes-of-the-Unseen-Restart/asset_import/wallgray1.jpg" id="7_fa6e4"]
+
 
 [sub_resource type="BoxMesh" id="BoxMesh_rqn35"]
 

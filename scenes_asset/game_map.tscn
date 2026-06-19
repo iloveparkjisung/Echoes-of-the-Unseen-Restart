@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bmnaaoqdx4ast"]
+
+[ext_resource type="PackedScene" uid="uid://cha070negw6mu" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/outside.tscn" id="1_ochrr"]
+[ext_resource type="PackedScene" uid="uid://blpwci13glk7s" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/buildinginside.tscn" id="2_xmyld"]
+[ext_resource type="PackedScene" uid="uid://dj5umf7agby8c" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/office.tscn" id="3_ochrr"]
+[ext_resource type="PackedScene" uid="uid://fft6v5pe4pwh" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/door.tscn" id="4_xmyld"]
+[ext_resource type="Script" uid="uid://cgncg5gh40yl5" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/transition_activator.gd" id="5_nchrn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jjb3"]
+
+[node name="GameMap" type="Node3D" unique_id=1966097271]
+
+[node name="Outside" parent="." unique_id=1388615587 instance=ExtResource("1_ochrr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 0)
+
+[node name="BuildingInside" parent="." unique_id=988247179 instance=ExtResource("2_xmyld")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.593, 0, 0)
+
+[node name="Office" parent="." unique_id=711704271 instance=ExtResource("3_ochrr")]
+
+[node name="Doors" type="Node" parent="." unique_id=1886300662]
+
+[node name="Door" parent="Doors" unique_id=722822336 instance=ExtResource("4_xmyld")]
+transform = Transform3D(-4.37114e-08, 0, 1.48, 0, 1.605, 0, -1, 0, -6.46929e-08, -8.846, 2.431, 0)
+
+[node name="TransitionActivator" type="StaticBody3D" parent="Doors/Door" unique_id=1166173298]
+script = ExtResource("5_nchrn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Doors/Door/TransitionActivator" unique_id=1439869086]
+transform = Transform3D(0.5, 0, 0, 0, 2.755, 0, 0, 0, 2.5, 0, 0, 0)
+shape = SubResource("BoxShape3D_0jjb3")
+
+[node name="Pos" type="Node3D" parent="Doors" unique_id=661671806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.780875, 0, -0.6649866)

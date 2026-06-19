@@ -2,19 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://tjrwpkkh1nf2" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/office_chair.tscn" id="1_ei2s5"]
 [ext_resource type="PackedScene" uid="uid://cgx37cppxkltb" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/vhs_shader.tscn" id="1_gxl1f"]
-[ext_resource type="PackedScene" uid="uid://dvg8hnnnr5fec" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/player.tscn" id="2_u8nhc"]
 [ext_resource type="PackedScene" uid="uid://cbaag802scp0p" path="res://Echoes-of-the-Unseen-Restart/asset_import/office_table.glb" id="3_43ocd"]
 [ext_resource type="PackedScene" uid="uid://cdq50a5kw8251" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/office_computer.tscn" id="4_hsito"]
 [ext_resource type="PackedScene" uid="uid://bko6478emsd1k" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/lighting.tscn" id="5_hsito"]
-[ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/task_board.tscn" id="6_lcnwv"]
+[ext_resource type="PackedScene" uid="uid://dtuu8akho5seb" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/task_board.tscn" id="6_lcnwv"]
 [ext_resource type="Texture2D" uid="uid://dtp6i5oj843eg" path="res://Echoes-of-the-Unseen-Restart/asset_import/carpet.jpg" id="6_lcwox"]
-[ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/tv.tscn" id="7_4i814"]
+[ext_resource type="PackedScene" uid="uid://djtw8d54libbo" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/tv.tscn" id="7_4i814"]
 [ext_resource type="Texture2D" uid="uid://coicphsv466jv" path="res://Echoes-of-the-Unseen-Restart/asset_import/wood2.jpg" id="7_lcwox"]
-[ext_resource type="PackedScene" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/glass_wall.tscn" id="8_3xqf3"]
+[ext_resource type="PackedScene" uid="uid://bygktcatyblu4" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/glass_wall.tscn" id="8_3xqf3"]
 [ext_resource type="Texture2D" uid="uid://dbi8lxca5b3lr" path="res://Echoes-of-the-Unseen-Restart/asset_import/wood4.jpg" id="8_knsl5"]
-[ext_resource type="PackedScene" uid="uid://fft6v5pe4pwh" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/door.tscn" id="9_70x1r"]
 [ext_resource type="Texture2D" uid="uid://bwpxo8ji6u3fk" path="res://Echoes-of-the-Unseen-Restart/asset_import/wallgray1.jpg" id="9_s0aar"]
-
 
 [sub_resource type="BoxMesh" id="BoxMesh_8yeiw"]
 
@@ -57,188 +54,185 @@ albedo_texture = ExtResource("9_s0aar")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_s0aar"]
 
-[node name="Office" type="Node3D"]
+[node name="Office" type="Node3D" unique_id=711704271]
 
-[node name="VHS_Shader" parent="." instance=ExtResource("1_gxl1f")]
+[node name="VHS_Shader" parent="." unique_id=1430508516 instance=ExtResource("1_gxl1f")]
 
-[node name="player" parent="." instance=ExtResource("2_u8nhc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.35802, 1, -2.59245)
-
-[node name="Office Cubicle Group" type="Node3D" parent="."]
+[node name="Office Cubicle Group" type="Node3D" parent="." unique_id=224946602]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0468998, 0, 2.5)
 
-[node name="Office Cubicle" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle" type="Node3D" parent="Office Cubicle Group" unique_id=1660879162]
 transform = Transform3D(1, 1.74846e-07, -1.74846e-07, -1.74846e-07, 1, 1.74846e-07, 1.74846e-07, -1.74846e-07, 1, 1, 0, -1.38)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle" unique_id=1409151777 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle" unique_id=1385143721 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle" unique_id=2101794399 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Office Cubicle2" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle2" type="Node3D" parent="Office Cubicle Group" unique_id=35383799]
 transform = Transform3D(1, 1.74846e-07, -1.74846e-07, -1.74846e-07, 1, 1.74846e-07, 1.74846e-07, -1.74846e-07, 1, -1.5, 0, -1.38)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle2" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle2" unique_id=444486443 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle2" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle2" unique_id=762389909 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle2" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle2" unique_id=1852616048 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Office Cubicle3" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle3" type="Node3D" parent="Office Cubicle Group" unique_id=1989315624]
 transform = Transform3D(1, 1.74846e-07, -1.74846e-07, -1.74846e-07, 1, 1.74846e-07, 1.74846e-07, -1.74846e-07, 1, -4, 0, -1.38)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle3" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle3" unique_id=1384077447 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle3" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle3" unique_id=1623075095 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle3" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle3" unique_id=261281874 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Office Cubicle4" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle4" type="Node3D" parent="Office Cubicle Group" unique_id=921249833]
 transform = Transform3D(1, 1.74846e-07, -1.74846e-07, -1.74846e-07, 1, 1.74846e-07, 1.74846e-07, -1.74846e-07, 1, -6.5, 0, -1.38)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle4" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle4" unique_id=397529210 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle4" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle4" unique_id=1378658551 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle4" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle4" unique_id=495222674 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Office Cubicle5" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle5" type="Node3D" parent="Office Cubicle Group" unique_id=550750019]
 transform = Transform3D(1, 1.74846e-07, -1.74846e-07, -1.74846e-07, 1, 1.74846e-07, 1.74846e-07, -1.74846e-07, 1, -9, 0, -1.38)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle5" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle5" unique_id=2092132400 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle5" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle5" unique_id=784975102 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle5" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle5" unique_id=1254498404 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Office Cubicle6" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle6" type="Node3D" parent="Office Cubicle Group" unique_id=433451948]
 transform = Transform3D(1, 1.74846e-07, -1.74846e-07, -1.74846e-07, 1, 1.74846e-07, 1.74846e-07, -1.74846e-07, 1, -11.5, 0, -1.38)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle6" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle6" unique_id=27239822 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle6" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle6" unique_id=1973874529 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle6" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle6" unique_id=956998094 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Office Cubicle7" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle7" type="Node3D" parent="Office Cubicle Group" unique_id=900127056]
 transform = Transform3D(-1, -1.74846e-07, 8.74228e-08, -1.74846e-07, 1, 1.74846e-07, -8.74228e-08, 1.74846e-07, -1, 4.25, 0, -13.87)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle7" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle7" unique_id=1019050940 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle7" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle7" unique_id=122297764 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle7" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle7" unique_id=600642276 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Office Cubicle8" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle8" type="Node3D" parent="Office Cubicle Group" unique_id=1785566995]
 transform = Transform3D(-1, -1.74846e-07, 8.74228e-08, -1.74846e-07, 1, 1.74846e-07, -8.74228e-08, 1.74846e-07, -1, 6.75, 0, -13.87)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle8" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle8" unique_id=1866768321 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle8" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle8" unique_id=1639394052 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle8" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle8" unique_id=637067963 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Office Cubicle9" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle9" type="Node3D" parent="Office Cubicle Group" unique_id=2013856583]
 transform = Transform3D(-1, -1.74846e-07, 8.74228e-08, -1.74846e-07, 1, 1.74846e-07, -8.74228e-08, 1.74846e-07, -1, 9.25, 0, -13.87)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle9" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle9" unique_id=1527713905 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle9" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle9" unique_id=2099673837 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle9" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle9" unique_id=37195325 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Office Cubicle10" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle10" type="Node3D" parent="Office Cubicle Group" unique_id=715114262]
 transform = Transform3D(-1, -1.74846e-07, 8.74228e-08, -1.74846e-07, 1, 1.74846e-07, -8.74228e-08, 1.74846e-07, -1, 11.75, 0, -13.87)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle10" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle10" unique_id=997236594 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle10" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle10" unique_id=144416434 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle10" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle10" unique_id=1262714775 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Office Cubicle11" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle11" type="Node3D" parent="Office Cubicle Group" unique_id=2052912240]
 transform = Transform3D(-1, -1.74846e-07, 8.74228e-08, -1.74846e-07, 1, 1.74846e-07, -8.74228e-08, 1.74846e-07, -1, 14.25, 0, -13.87)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle11" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle11" unique_id=709109717 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle11" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle11" unique_id=736583539 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle11" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle11" unique_id=1032788571 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Office Cubicle12" type="Node3D" parent="Office Cubicle Group"]
+[node name="Office Cubicle12" type="Node3D" parent="Office Cubicle Group" unique_id=471183801]
 transform = Transform3D(-1, -1.74846e-07, 8.74228e-08, -1.74846e-07, 1, 1.74846e-07, -8.74228e-08, 1.74846e-07, -1, 16.75, 0, -13.87)
 
-[node name="office_chair" parent="Office Cubicle Group/Office Cubicle12" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Office Cubicle12" unique_id=1987681215 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Office Cubicle12" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Office Cubicle12" unique_id=1397972269 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Office Cubicle12" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Office Cubicle12" unique_id=1818204268 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Boss Cubicle" type="Node3D" parent="Office Cubicle Group"]
+[node name="Boss Cubicle" type="Node3D" parent="Office Cubicle Group" unique_id=1764430856]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.292, 0, 0.221)
 
-[node name="office_chair" parent="Office Cubicle Group/Boss Cubicle" instance=ExtResource("1_ei2s5")]
+[node name="office_chair" parent="Office Cubicle Group/Boss Cubicle" unique_id=1514946058 instance=ExtResource("1_ei2s5")]
 transform = Transform3D(0.75, -1.31134e-07, 1.31134e-07, 1.31134e-07, 0.75, -1.31134e-07, -1.31134e-07, 1.31134e-07, 0.75, 7.85856, 0.773208, -7.97586)
 
-[node name="office_table" parent="Office Cubicle Group/Boss Cubicle" instance=ExtResource("3_43ocd")]
+[node name="office_table" parent="Office Cubicle Group/Boss Cubicle" unique_id=1268044417 instance=ExtResource("3_43ocd")]
 transform = Transform3D(1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 7.86978, 0.613839, -6.93321)
 
-[node name="office_computer" parent="Office Cubicle Group/Boss Cubicle" instance=ExtResource("4_hsito")]
+[node name="office_computer" parent="Office Cubicle Group/Boss Cubicle" unique_id=741281799 instance=ExtResource("4_hsito")]
 transform = Transform3D(-0.482963, -8.74228e-08, 0.129409, -6.18173e-08, 0.5, 1.07071e-07, -0.129409, 8.74228e-08, -0.482963, 7.48034, 1.55008, -6.91886)
 
-[node name="Lights" type="Node3D" parent="."]
+[node name="Lights" type="Node3D" parent="." unique_id=1184048144]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.12224, 2.57352, 1.45266)
 
-[node name="Lighting" parent="Lights" instance=ExtResource("5_hsito")]
+[node name="Lighting" parent="Lights" unique_id=261898534 instance=ExtResource("5_hsito")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05746, 4.71586, -6.55217)
 
-[node name="Lighting4" parent="Lights" instance=ExtResource("5_hsito")]
+[node name="Lighting4" parent="Lights" unique_id=375353904 instance=ExtResource("5_hsito")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 4.716, -6.552)
 
-[node name="Lighting3" parent="Lights" instance=ExtResource("5_hsito")]
+[node name="Lighting3" parent="Lights" unique_id=792590638 instance=ExtResource("5_hsito")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.65001, 4.71586, -6.55217)
 
-[node name="Lighting2" parent="Lights" instance=ExtResource("5_hsito")]
+[node name="Lighting2" parent="Lights" unique_id=2120023476 instance=ExtResource("5_hsito")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.87961, 4.71586, -6.55217)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Lights"]
+[node name="OmniLight3D" type="OmniLight3D" parent="Lights" unique_id=2033356074]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.15452, -6.72033)
 light_color = Color(1, 0.988235, 0.729412, 1)
 light_energy = 2.0
@@ -248,117 +242,114 @@ light_bake_mode = 1
 shadow_enabled = true
 omni_range = 40.2699
 
-[node name="Buildings" type="Node3D" parent="."]
+[node name="Buildings" type="Node3D" parent="." unique_id=1463051982]
 
-[node name="Floor" type="StaticBody3D" parent="Buildings"]
+[node name="Floor" type="StaticBody3D" parent="Buildings" unique_id=1367051814]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.17)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/Floor"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/Floor" unique_id=1369685788]
 transform = Transform3D(20, 0, 0, 0, 0.1, 0, 0, 0, 10.03, -0.0236874, -0.00172424, -4.78043)
 mesh = SubResource("BoxMesh_8yeiw")
 surface_material_override/0 = SubResource("StandardMaterial3D_70x1r")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/Floor"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/Floor" unique_id=876025756]
 transform = Transform3D(20, 0, 0, 0, 0.1, 0, 0, 0, 10, 0, 0, -4.8)
 shape = SubResource("BoxShape3D_g3mwp")
 
-[node name="Wall" type="StaticBody3D" parent="Buildings"]
+[node name="Wall" type="StaticBody3D" parent="Buildings" unique_id=2131364966]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 10, 10, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/Wall"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/Wall" unique_id=733421698]
 transform = Transform3D(7.5, 0, 0, 0, 0.1, 0, 0, 0, 10, -6.25, 0, -5)
 mesh = SubResource("BoxMesh_8yeiw")
 surface_material_override/0 = SubResource("StandardMaterial3D_knsl5")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/Wall"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/Wall" unique_id=1040140009]
 transform = Transform3D(7.5, 8.74228e-09, 0, -6.55671e-07, 0.1, 0, 0, 0, -10, -6.25, 0, -5)
 shape = SubResource("BoxShape3D_g3mwp")
 
-[node name="Wall2" type="StaticBody3D" parent="Buildings"]
+[node name="Wall2" type="StaticBody3D" parent="Buildings" unique_id=223674653]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -10, 10, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/Wall2"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/Wall2" unique_id=1251163392]
 transform = Transform3D(7.5, 0, 0, 0, 0.1, 0, 0, 0, 10, -6.25, 0, -5)
 mesh = SubResource("BoxMesh_8yeiw")
 surface_material_override/0 = SubResource("StandardMaterial3D_3xqf3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/Wall2"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/Wall2" unique_id=431314667]
 transform = Transform3D(7.5, 8.74228e-09, 0, -6.55671e-07, 0.1, 0, 0, 0, -10, -6.25, 0, -5)
 shape = SubResource("BoxShape3D_g3mwp")
 
-[node name="Wall4" type="StaticBody3D" parent="Buildings"]
+[node name="Wall4" type="StaticBody3D" parent="Buildings" unique_id=150844131]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 0, 10, -9.955)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/Wall4"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/Wall4" unique_id=779068908]
 transform = Transform3D(7.5, 0, -3.38813e-21, 0, 0.1, 0, 0, 0, 20, -6.25, 0, 0)
 mesh = SubResource("BoxMesh_8yeiw")
 surface_material_override/0 = SubResource("StandardMaterial3D_s0aar")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/Wall4"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/Wall4" unique_id=1145942660]
 transform = Transform3D(7.5, 0, 3.39746e-21, 0, 0.1, 0, -1.27055e-21, 0, 20.055, -6.25, 0, 0)
 shape = SubResource("BoxShape3D_g3mwp")
 
-[node name="SmallWall" type="StaticBody3D" parent="Buildings"]
+[node name="SmallWall" type="StaticBody3D" parent="Buildings" unique_id=1557318421]
 transform = Transform3D(4.39458e-16, 1.00536e-08, 0.75, 0.23, -1.00536e-08, 0, 1.00536e-08, 0.23, -3.27835e-08, 2.5229, 2.369, -5.135)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/SmallWall"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/SmallWall" unique_id=777587278]
 transform = Transform3D(10.04, 0, 0, 0, 0.1, 0, 0, 0, 20, -5.005, 0, 0)
 mesh = SubResource("BoxMesh_8yeiw")
 surface_material_override/0 = SubResource("StandardMaterial3D_gxl1f")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/SmallWall"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/SmallWall" unique_id=1628719347]
 transform = Transform3D(10, 0, 0, 0, 0.1, 0, 0, 0, 20, -5, 0, 0)
 shape = SubResource("BoxShape3D_g3mwp")
 
-[node name="SmallWall2" type="StaticBody3D" parent="Buildings"]
+[node name="SmallWall2" type="StaticBody3D" parent="Buildings" unique_id=1505963948]
 transform = Transform3D(6.55671e-09, 0.23, 3.32191e-08, 0.15, -1.00536e-08, 6.21158e-23, 9.90036e-16, 3.4729e-08, -0.22, -4.97933, 1.52524, -5.65979)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/SmallWall2"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/SmallWall2" unique_id=1368285806]
 transform = Transform3D(10.04, -6.49962e-23, 5.92586e-21, 6.52562e-21, 0.1, 3.11928e-13, -3.38813e-21, -1.77636e-15, 17.56, -5.005, 0, 0)
 mesh = SubResource("BoxMesh_8yeiw")
 surface_material_override/0 = SubResource("StandardMaterial3D_2uxut")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/SmallWall2"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/SmallWall2" unique_id=1698427532]
 transform = Transform3D(10, 0, 0, 0, 0.1, 0, 0, 0, 17.5, -5, 0, 0)
 shape = SubResource("BoxShape3D_g3mwp")
 
-[node name="GlassWall" parent="Buildings" instance=ExtResource("8_3xqf3")]
+[node name="GlassWall" parent="Buildings" unique_id=847121980 instance=ExtResource("8_3xqf3")]
 transform = Transform3D(-4.37114e-08, 0, 2, 0, 2.95, 0, -1, 0, -8.74228e-08, 8.45985, 0.126631, -0.0464127)
 
-[node name="GlassWall2" parent="Buildings" instance=ExtResource("8_3xqf3")]
+[node name="GlassWall2" parent="Buildings" unique_id=1299844048 instance=ExtResource("8_3xqf3")]
 transform = Transform3D(-4.37114e-08, 0, 2, 0, 2.95, 0, -1, 0, -8.74228e-08, 5.5651, 0.126631, -0.0464127)
 
-[node name="GlassWall3" parent="Buildings" instance=ExtResource("8_3xqf3")]
+[node name="GlassWall3" parent="Buildings" unique_id=1709719142 instance=ExtResource("8_3xqf3")]
 transform = Transform3D(-4.37114e-08, 0, 2, 0, 2.95, 0, -1, 0, -8.74228e-08, 2.64945, 0.126631, -0.0464127)
 
-[node name="GlassWall4" parent="Buildings" instance=ExtResource("8_3xqf3")]
+[node name="GlassWall4" parent="Buildings" unique_id=1281019633 instance=ExtResource("8_3xqf3")]
 transform = Transform3D(-4.37114e-08, 0, 2, 0, 2.95, 0, -1, 0, -8.74228e-08, -0.257243, 0.126631, -0.0464127)
 
-[node name="GlassWall5" parent="Buildings" instance=ExtResource("8_3xqf3")]
+[node name="GlassWall5" parent="Buildings" unique_id=1598439884 instance=ExtResource("8_3xqf3")]
 transform = Transform3D(-4.37114e-08, 0, 2, 0, 2.95, 0, -1, 0, -8.74228e-08, -3.143, 0.126631, -0.0464127)
 
-[node name="GlassWall6" parent="Buildings" instance=ExtResource("8_3xqf3")]
+[node name="GlassWall6" parent="Buildings" unique_id=1394226598 instance=ExtResource("8_3xqf3")]
 transform = Transform3D(-4.37114e-08, 0, 2, 0, 2.95, 0, -1, 0, -8.74228e-08, -6.03641, 0.126631, -0.0464127)
 
-[node name="GlassWall7" parent="Buildings" instance=ExtResource("8_3xqf3")]
+[node name="GlassWall7" parent="Buildings" unique_id=1625812545 instance=ExtResource("8_3xqf3")]
 transform = Transform3D(-4.37114e-08, 0, 1.705, 0, 1.05, 0, -1, 0, -7.45279e-08, -8.72791, 4.86241, -0.0464127)
 
-[node name="Door" parent="Buildings" instance=ExtResource("9_70x1r")]
-transform = Transform3D(-4.37114e-08, 0, 1.48, 0, 1.605, 0, -1, 0, -6.46929e-08, -8.846, 2.431, 0)
-
-[node name="Task Board" parent="Buildings" instance=ExtResource("6_lcnwv")]
+[node name="Task Board" parent="Buildings" unique_id=654203487 instance=ExtResource("6_lcnwv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.46024, 2.85292, -9.90382)
 
-[node name="TV" parent="Buildings" instance=ExtResource("7_4i814")]
+[node name="TV" parent="Buildings" unique_id=1735567875 instance=ExtResource("7_4i814")]
 transform = Transform3D(-1.08623e-07, 0, 2, 0, 2.5, 0, -2.485, 0, -8.74228e-08, -9.51099, 2.70249, -5.13007)
 
-[node name="ROOF" type="StaticBody3D" parent="Buildings"]
+[node name="ROOF" type="StaticBody3D" parent="Buildings" unique_id=2049842757]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/ROOF"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/ROOF" unique_id=155704072]
 transform = Transform3D(10.045, 0, 0, 0, -0.999997, 0.011607, 0, -0.00232139, -4.99999, 0, 7.51256, -4.98537)
 mesh = SubResource("PlaneMesh_s0aar")
 surface_material_override/0 = SubResource("StandardMaterial3D_n1y4y")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/ROOF"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/ROOF" unique_id=1258912094]
 transform = Transform3D(20.165, 0, 0, 0, 0.38, 0, 0, 0, 10.13, 0, 7.5, -5)
 shape = SubResource("BoxShape3D_s0aar")
