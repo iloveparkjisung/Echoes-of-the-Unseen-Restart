@@ -3,11 +3,14 @@
 [ext_resource type="Script" uid="uid://beqlw45nfknel" path="res://Echoes-of-the-Unseen-Restart/othergame/Scripts/player.gd" id="1_lpl3s"]
 [ext_resource type="Script" uid="uid://bj6ev4l65swe8" path="res://Echoes-of-the-Unseen-Restart/scripts/interaction_raycast.gd" id="2_qwthm"]
 [ext_resource type="AudioStream" uid="uid://773yfyj8pql1" path="res://Echoes-of-the-Unseen-Restart/othergame/Audio/walking-96582.mp3" id="3_f60kg"]
-[ext_resource type="PackedScene" uid="uid://cgx37cppxkltb" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/vhs_shader.tscn" id="4_qwthm"]
+[ext_resource type="Script" uid="uid://lao1boac6j6e" path="res://Echoes-of-the-Unseen-Restart/othergame/CameraManager.gd" id="4_l45lh"]
+[ext_resource type="PackedScene" uid="uid://cp0d63c611opt" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/canvas_layer.tscn" id="4_qwthm"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_yvts3"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g3882"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_yy4me"]
 
 [node name="Player" type="CharacterBody3D" unique_id=1513402906 groups=["player"]]
 collision_layer = 3
@@ -21,20 +24,34 @@ mesh = SubResource("CapsuleMesh_yvts3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.974258, 0)
 shape = SubResource("CapsuleShape3D_g3882")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1184793943]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7462, 0)
-
-[node name="InteractionRaycast" type="RayCast3D" parent="Camera3D" unique_id=1861822381 groups=["ir"]]
-target_position = Vector3(0, 0, -1.3)
-collision_mask = 2
-script = ExtResource("2_qwthm")
-
-[node name="SpotLight3D" type="SpotLight3D" parent="Camera3D" unique_id=1110441962]
-spot_range = 7.43
-spot_angle = 41.57
-
 [node name="Walking" type="AudioStreamPlayer3D" parent="." unique_id=2143026221]
 stream = ExtResource("3_f60kg")
 volume_db = 80.0
 
-[node name="VHS_Shader" parent="." unique_id=1780977953 instance=ExtResource("4_qwthm")]
+[node name="CanvasLayer" parent="." unique_id=2046956397 instance=ExtResource("4_qwthm")]
+auto_translate_mode = 2
+
+[node name="CameraManager" type="Node3D" parent="." unique_id=1917427294]
+script = ExtResource("4_l45lh")
+mouse_sensitivity = null
+mouse_y_inversion = null
+
+[node name="Camera3D2" type="Camera3D" parent="CameraManager" unique_id=1184793943]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7462001, -1.527369e-07)
+
+[node name="InteractionRaycast" type="RayCast3D" parent="CameraManager/Camera3D2" unique_id=1861822381 groups=["ir"]]
+target_position = Vector3(0, 0, -1.3)
+collision_mask = 2
+script = ExtResource("2_qwthm")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="CameraManager/Camera3D2" unique_id=1110441962]
+spot_range = 7.43
+spot_angle = 41.57
+
+[node name="Arm" type="SpringArm3D" parent="CameraManager" unique_id=594080161]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, -0.9987526, 0.04993093, 0, -0.04993093, -0.9987526, 0, 2.32515, -0.0321627)
+shape = SubResource("SphereShape3D_yy4me")
+spring_length = 6.0
+margin = 0.5
