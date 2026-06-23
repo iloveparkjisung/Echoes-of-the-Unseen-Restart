@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bmm0yijljsnga"]
 
 [ext_resource type="Script" uid="uid://beqlw45nfknel" path="res://Echoes-of-the-Unseen-Restart/othergame/Scripts/player.gd" id="1_lpl3s"]
-[ext_resource type="Script" uid="uid://bj6ev4l65swe8" path="res://Echoes-of-the-Unseen-Restart/othergame/Prefabs/interaction_raycast.gd" id="2_qwthm"]
+[ext_resource type="Script" uid="uid://bj6ev4l65swe8" path="res://Echoes-of-the-Unseen-Restart/scripts/interaction_raycast.gd" id="2_qwthm"]
 [ext_resource type="AudioStream" uid="uid://773yfyj8pql1" path="res://Echoes-of-the-Unseen-Restart/othergame/Audio/walking-96582.mp3" id="3_f60kg"]
 [ext_resource type="PackedScene" uid="uid://cgx37cppxkltb" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/vhs_shader.tscn" id="4_qwthm"]
 
@@ -10,6 +10,7 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g3882"]
 
 [node name="Player" type="CharacterBody3D" unique_id=1513402906 groups=["player"]]
+collision_layer = 3
 script = ExtResource("1_lpl3s")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1124185756]

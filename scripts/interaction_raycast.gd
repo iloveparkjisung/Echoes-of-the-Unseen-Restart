@@ -4,7 +4,7 @@ extends RayCast3D
 
 func _process(delta):
 	if is_colliding():
-		Global.canInteract() = true
+		Global.canInteract = true
 		if Input.is_action_just_released("Interact"):
 			if get_collider().is_in_group("dialog") and not Global.dialogActive and get_collider().db != null:
 				get_collider().db.active()

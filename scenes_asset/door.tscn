@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dco67i0m7vb6h"]
 
-[ext_resource type="Script" uid="uid://bwirlhjcfqk7s" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/door.gd" id="1_m0411"]
+[ext_resource type="Script" uid="uid://bwirlhjcfqk7s" path="res://Echoes-of-the-Unseen-Restart/scripts/door.gd" id="1_m0411"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tsmxd"]
 

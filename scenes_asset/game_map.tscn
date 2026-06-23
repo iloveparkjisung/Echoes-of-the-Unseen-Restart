@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://blpwci13glk7s" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/buildinginside.tscn" id="2_xmyld"]
 [ext_resource type="PackedScene" uid="uid://dj5umf7agby8c" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/office.tscn" id="3_ochrr"]
 [ext_resource type="PackedScene" uid="uid://fft6v5pe4pwh" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/door.tscn" id="4_xmyld"]
-[ext_resource type="Script" uid="uid://cgncg5gh40yl5" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/transition_activator.gd" id="5_nchrn"]
+[ext_resource type="Script" uid="uid://cgncg5gh40yl5" path="res://Echoes-of-the-Unseen-Restart/scripts/transition_activator.gd" id="5_nchrn"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0jjb3"]
 
