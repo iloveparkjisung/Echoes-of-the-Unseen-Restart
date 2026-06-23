@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cp0d63c611opt"]
+
+[ext_resource type="PackedScene" uid="uid://cgx37cppxkltb" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/vhs_shader.tscn" id="1_um5uo"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=2046956397]
+
+[node name="Inventory" type="Node2D" parent="." unique_id=123382941]
+
+[node name="VHSLayer" type="CanvasLayer" parent="." unique_id=521756552]
+
+[node name="VHS_Shader" parent="VHSLayer" unique_id=1780977953 instance=ExtResource("1_um5uo")]
+
+[node name="DialogeBox" type="Label" parent="." unique_id=42347346]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CRTLayer" type="CanvasLayer" parent="." unique_id=1249174601]
+
+[node name="Cursor" type="Sprite2D" parent="CRTLayer" unique_id=853218674]
