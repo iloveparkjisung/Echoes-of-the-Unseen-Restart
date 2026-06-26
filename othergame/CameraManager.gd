@@ -1,4 +1,4 @@
-class_name CamerController extends Node3D
+class_name CameraController extends Node3D
 @export var debug : bool = false
 @export_category("References")
 @export var player_controller : PlayerController

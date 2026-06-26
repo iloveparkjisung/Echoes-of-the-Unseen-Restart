@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://bj6ev4l65swe8" path="res://Echoes-of-the-Unseen-Restart/scripts/interaction_raycast.gd" id="2_qwthm"]
 [ext_resource type="AudioStream" uid="uid://773yfyj8pql1" path="res://Echoes-of-the-Unseen-Restart/othergame/Audio/walking-96582.mp3" id="3_f60kg"]
 [ext_resource type="Script" uid="uid://lao1boac6j6e" path="res://Echoes-of-the-Unseen-Restart/othergame/CameraManager.gd" id="4_l45lh"]
-[ext_resource type="PackedScene" uid="uid://cp0d63c611opt" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/canvas_layer.tscn" id="4_qwthm"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_yvts3"]
 
@@ -28,13 +27,8 @@ shape = SubResource("CapsuleShape3D_g3882")
 stream = ExtResource("3_f60kg")
 volume_db = 80.0
 
-[node name="CanvasLayer" parent="." unique_id=2046956397 instance=ExtResource("4_qwthm")]
-auto_translate_mode = 2
-
 [node name="CameraManager" type="Node3D" parent="." unique_id=1917427294]
 script = ExtResource("4_l45lh")
-mouse_sensitivity = null
-mouse_y_inversion = null
 
 [node name="Camera3D2" type="Camera3D" parent="CameraManager" unique_id=1184793943]
 unique_name_in_owner = true

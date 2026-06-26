@@ -2,7 +2,6 @@
 extends EditorPlugin
 
 ## Preload the main panel scene
-const MainPanel := preload("res://addons/dialogic/Editor/editor_main.tscn")
 const PLUGIN_NAME := "Dialogic"
 const PLUGIN_HANDLER_PATH := "res://addons/dialogic/Core/DialogicGameHandler.gd"
 const PLUGIN_ICON_PATH := "res://addons/dialogic/Editor/Images/plugin-icon.svg"
@@ -30,7 +29,6 @@ func _disable_plugin() -> void:
 
 
 func _enter_tree() -> void:
-	editor_view = MainPanel.instantiate()
 	editor_view.plugin_reference = self
 	editor_view.hide()
 	get_editor_interface().get_editor_main_screen().add_child(editor_view)

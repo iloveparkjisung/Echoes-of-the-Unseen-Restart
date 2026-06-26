@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://c3mlf1e1y0yhl" path="res://Echoes-of-the-Unseen-Restart/othergame/House/House_Bush.png" id="15_xpri4"]
 [ext_resource type="Texture2D" uid="uid://c1t7i48anrci8" path="res://Echoes-of-the-Unseen-Restart/othergame/House/House_Tree_05.png" id="16_qqvyd"]
 [ext_resource type="Texture2D" uid="uid://bie3k4vm0jty2" path="res://Echoes-of-the-Unseen-Restart/othergame/House/House_Tree_04.png" id="17_pe4pk"]
+[ext_resource type="PackedScene" uid="uid://cp0d63c611opt" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/canvas_layer.tscn" id="18_pe4pk"]
 [ext_resource type="PackedScene" uid="uid://bmm0yijljsnga" path="res://Echoes-of-the-Unseen-Restart/othergame/Prefabs/player.tscn" id="18_qqvyd"]
 [ext_resource type="Texture2D" uid="uid://vhjkf4cl5r51" path="res://Echoes-of-the-Unseen-Restart/othergame/House/House_Tree_03.png" id="18_wyy7l"]
 
@@ -920,5 +921,8 @@ mesh = SubResource("ArrayMesh_co362")
 [node name="Tree_03_1" type="MeshInstance3D" parent="." unique_id=1402925945]
 transform = Transform3D(-0.9915374, 0, -0.79326636, 0, 1.2698103, 0, 0.79326636, 0, -0.9915374, -11.521315, -0.0026754886, 40.842205)
 mesh = SubResource("ArrayMesh_jekt8")
+
+[node name="CanvasLayer" parent="." unique_id=2046956397 instance=ExtResource("18_pe4pk")]
+auto_translate_mode = 2
 
 [node name="Player" parent="." unique_id=1513402906 instance=ExtResource("18_qqvyd")]

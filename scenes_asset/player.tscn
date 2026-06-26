@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b8q8qwei1yqip" path="res://Echoes-of-the-Unseen-Restart/scripts/mouse_capture.gd" id="1_klxr0"]
 [ext_resource type="Script" uid="uid://bbhv3d12deytc" path="res://Echoes-of-the-Unseen-Restart/scripts/player_controller.gd" id="1_xbrla"]
 [ext_resource type="Script" uid="uid://bdyrmul24awjk" path="res://Echoes-of-the-Unseen-Restart/scripts/camera_controller.gd" id="2_w3o16"]
-[ext_resource type="PackedScene" uid="uid://cgx37cppxkltb" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/vhs_shader.tscn" id="4_w3o16"]
+[ext_resource type="Script" uid="uid://bj6ev4l65swe8" path="res://Echoes-of-the-Unseen-Restart/scripts/interaction_raycast.gd" id="3_w3o16"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_85jef"]
 
@@ -12,6 +12,8 @@
 [node name="PlayerController" type="CharacterBody3D" unique_id=1396868878]
 collision_mask = 2
 script = ExtResource("1_xbrla")
+acceleration = null
+deceleration = null
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1310487912]
 mesh = SubResource("CapsuleMesh_85jef")
@@ -28,9 +30,12 @@ component_mouse_capture = NodePath("../Components/MouseCapture")
 [node name="Camera3D" type="Camera3D" parent="CameraController" unique_id=645588391]
 fov = 90.0
 
+[node name="InteractionRaycast" type="RayCast3D" parent="CameraController/Camera3D" unique_id=1702251701 groups=["ir"]]
+target_position = Vector3(0, 0, -1.3)
+collision_mask = 2
+script = ExtResource("3_w3o16")
+
 [node name="Components" type="Node" parent="." unique_id=233808442]
 
 [node name="MouseCapture" type="Node" parent="Components" unique_id=1859941990]
 script = ExtResource("1_klxr0")
-
-[node name="VHS_Shader" parent="." unique_id=505571433 instance=ExtResource("4_w3o16")]

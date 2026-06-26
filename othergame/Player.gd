@@ -1,4 +1,4 @@
-extends CharacterBody3D
+class_name PlayerController extends CharacterBody3D
 
 @export var MOVE_SPEED: float = 50.0
 @export var JUMP_SPEED: float = 2.0
@@ -25,18 +25,30 @@ extends CharacterBody3D
 		$CollisionShapeBody.disabled = ! collision_enabled
 		$CollisionShapeRay.disabled = ! collision_enabled
 
-
-func _physics_process(p_delta) -> void:
-	var direction: Vector3 = get_camera_relative_input()
-	var h_veloc: Vector2 = Vector2(direction.x, direction.z) * MOVE_SPEED
-	if Input.is_key_pressed(KEY_SHIFT):
-		h_veloc *= 2
-	velocity.x = h_veloc.x
-	velocity.z = h_veloc.y
-	if gravity_enabled:
-		velocity.y -= 40 * p_delta
+func _physics_process(delta: float) -> void:
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+	
+	_input_dir = Input.get_vector("left", "right", "forward", "backward")
+	var current_velocity = Vector2(_movement_velocity.x, _movement_velocity.z)
+	var direction = (transform.basis * Vector3(_input_dir.x, 0, _input_dir.y).normalized())
+	
+	if direction:
+		current_velocity = lerp(current_velocity, Vector2(direction.x, direction.z) * speed, acceleration)
+	else:
+		current_velocity = current_velocity.move_toward(Vector2.ZERO, deceleration)
+	
+	_movement_velocity = Vector3(current_velocity.x, velocity.y, current_velocity.y)
+	velocity = _movement_velocity	
+	
 	move_and_slide()
 
+
+var _input_dir : Vector2 = Vector2.ZERO
+var _movement_velocity : Vector3 = Vector3.ZERO
+var speed : float = 3.5
+@export var acceleration : float = 0.1
+@export var deceleration : float = 0.2
 
 # Returns the input vector relative to the camera. Forward is always the direction the camera is facing
 func get_camera_relative_input() -> Vector3:

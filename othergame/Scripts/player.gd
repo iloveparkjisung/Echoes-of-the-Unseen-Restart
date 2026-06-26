@@ -24,7 +24,7 @@ func _process(delta: float) -> void:
 		elif not velocity:
 			walking.stop()
 	
-	if not (Dialogic.dialogActive or Global.menuActive) :
+	if not (Global.menuActive) :
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 		canMove = true
 	else:

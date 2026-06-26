@@ -1,14 +1,13 @@
-[gd_scene load_steps=16 format=3 uid="uid://fl5wohldwl2"]
+[gd_scene format=3 uid="uid://fl5wohldwl2"]
 
-[ext_resource type="Texture2D" uid="uid://dl5u5k3v2k67t" path="res://icon.svg" id="1_5stfe"]
-[ext_resource type="Shader" uid="uid://ckwu4s1iwprcg" path="res://0Shaders/VHS.gdshader" id="1_r3wvi"]
-[ext_resource type="Script" uid="uid://cpx6p0be672ca" path="res://Scripts/canvas_layer.gd" id="1_x3tsj"]
-[ext_resource type="PackedScene" uid="uid://w3bywrn6hqm0" path="res://Prefabs/menu.tscn" id="2_ctkk8"]
-[ext_resource type="Texture2D" uid="uid://dwqfqda5jp3i2" path="res://Sprites/Cursor2.png" id="3_4tu35"]
-[ext_resource type="Script" uid="uid://dl0r687rfoioi" path="res://Scripts/task.gd" id="3_80jnu"]
-[ext_resource type="Script" uid="uid://clq6wefl3u7r8" path="res://Scripts/transition_anim.gd" id="3_e02kc"]
-[ext_resource type="Shader" uid="uid://cuie5vitsq2dr" path="res://0Shaders/VHS_Overlay.gdshader" id="5_nfasq"]
-[ext_resource type="VideoStream" uid="uid://bd5e24joppjxm" path="res://0Shaders/4990235-hd_1920_1080_30fps.ogv" id="6_j16n8"]
+[ext_resource type="Shader" uid="uid://ckwu4s1iwprcg" path="res://Echoes-of-the-Unseen-Restart/othergame/0Shaders/VHS.gdshader" id="1_r3wvi"]
+[ext_resource type="Script" uid="uid://cpx6p0be672ca" path="res://Echoes-of-the-Unseen-Restart/othergame/Scripts/canvas_layer.gd" id="1_x3tsj"]
+[ext_resource type="PackedScene" uid="uid://w3bywrn6hqm0" path="res://Echoes-of-the-Unseen-Restart/othergame/Prefabs/menu.tscn" id="2_ctkk8"]
+[ext_resource type="Texture2D" uid="uid://dwqfqda5jp3i2" path="res://Echoes-of-the-Unseen-Restart/othergame/Sprites/Cursor2.png" id="3_4tu35"]
+[ext_resource type="Script" uid="uid://dl0r687rfoioi" path="res://Echoes-of-the-Unseen-Restart/othergame/Scripts/task.gd" id="3_80jnu"]
+[ext_resource type="Script" uid="uid://clq6wefl3u7r8" path="res://Echoes-of-the-Unseen-Restart/othergame/Scripts/transition_anim.gd" id="3_e02kc"]
+[ext_resource type="Shader" uid="uid://cuie5vitsq2dr" path="res://Echoes-of-the-Unseen-Restart/othergame/0Shaders/VHS_Overlay.gdshader" id="5_nfasq"]
+[ext_resource type="VideoStream" uid="uid://bd5e24joppjxm" path="res://Echoes-of-the-Unseen-Restart/othergame/0Shaders/4990235-hd_1920_1080_30fps.ogv" id="6_j16n8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_50xsf"]
 shader = ExtResource("1_r3wvi")
@@ -94,53 +93,50 @@ _data = {
 shader = ExtResource("5_nfasq")
 shader_parameter/alpha = 0.1
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1632015079]
 script = ExtResource("1_x3tsj")
 
-[node name="Menu" parent="." instance=ExtResource("2_ctkk8")]
+[node name="Menu" parent="." unique_id=1981653696 instance=ExtResource("2_ctkk8")]
 visible = false
 
-[node name="Icon" type="Sprite2D" parent="."]
+[node name="Icon" type="Sprite2D" parent="." unique_id=1156417582]
 visible = false
 position = Vector2(283, 196)
-texture = ExtResource("1_5stfe")
 
-[node name="Task" type="Label" parent="." groups=["task"]]
+[node name="Task" type="Label" parent="." unique_id=1315266044 groups=["task"]]
 offset_right = 340.0
 offset_bottom = 49.0
 script = ExtResource("3_80jnu")
 
-[node name="VHS" type="ColorRect" parent="." groups=["shader"]]
+[node name="VHS" type="ColorRect" parent="." unique_id=8791798 groups=["shader"]]
 material = SubResource("ShaderMaterial_50xsf")
 offset_right = 645.0
 offset_bottom = 362.0
 mouse_filter = 2
 
-[node name="Cursor1" type="ColorRect" parent="." groups=["cursor1"]]
+[node name="Cursor1" type="ColorRect" parent="." unique_id=652545460 groups=["cursor1"]]
 offset_left = 319.0
 offset_top = 179.0
 offset_right = 321.0
 offset_bottom = 181.0
 
-[node name="Cursor2" type="Sprite2D" parent="." groups=["cursor2"]]
+[node name="Cursor2" type="Sprite2D" parent="." unique_id=1973291445 groups=["cursor2"]]
 visible = false
 position = Vector2(321, 181)
 scale = Vector2(0.85, 0.784)
 texture = ExtResource("3_4tu35")
 
-[node name="TransitionRect" type="ColorRect" parent="."]
-offset_right = 644.0
-offset_bottom = 363.0
+[node name="TransitionRect" type="ColorRect" parent="." unique_id=1786034671]
+offset_right = 752.0
+offset_bottom = 403.0
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="TransitionAnim" type="AnimationPlayer" parent="TransitionRect" groups=["trAnim"]]
-libraries = {
-&"": SubResource("AnimationLibrary_80a5y")
-}
+[node name="TransitionAnim" type="AnimationPlayer" parent="TransitionRect" unique_id=1275759500 groups=["trAnim"]]
+libraries/ = SubResource("AnimationLibrary_80a5y")
 script = ExtResource("3_e02kc")
 
-[node name="Name" type="Label" parent="." groups=["nameLabel"]]
+[node name="Name" type="Label" parent="." unique_id=1202506326 groups=["nameLabel"]]
 offset_left = -1.0
 offset_top = 298.0
 offset_right = 640.0
@@ -150,7 +146,7 @@ theme_override_font_sizes/font_size = 21
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VHS Overlay" type="VideoStreamPlayer" parent="." groups=["overlay"]]
+[node name="VHS Overlay" type="VideoStreamPlayer" parent="." unique_id=1418053674 groups=["overlay"]]
 material = SubResource("ShaderMaterial_i743d")
 offset_right = 40.0
 offset_bottom = 40.0

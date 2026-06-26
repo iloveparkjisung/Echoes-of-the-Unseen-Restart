@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dj5umf7agby8c"]
 
 [ext_resource type="PackedScene" uid="uid://tjrwpkkh1nf2" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/office_chair.tscn" id="1_ei2s5"]
-[ext_resource type="PackedScene" uid="uid://cgx37cppxkltb" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/vhs_shader.tscn" id="1_gxl1f"]
 [ext_resource type="PackedScene" uid="uid://cbaag802scp0p" path="res://Echoes-of-the-Unseen-Restart/asset_import/office_table.glb" id="3_43ocd"]
 [ext_resource type="PackedScene" uid="uid://cdq50a5kw8251" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/office_computer.tscn" id="4_hsito"]
 [ext_resource type="PackedScene" uid="uid://bko6478emsd1k" path="res://Echoes-of-the-Unseen-Restart/asset_import/assets_tscn/lighting.tscn" id="5_hsito"]
@@ -12,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bygktcatyblu4" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/glass_wall.tscn" id="8_3xqf3"]
 [ext_resource type="Texture2D" uid="uid://dbi8lxca5b3lr" path="res://Echoes-of-the-Unseen-Restart/asset_import/wood4.jpg" id="8_knsl5"]
 [ext_resource type="Texture2D" uid="uid://bwpxo8ji6u3fk" path="res://Echoes-of-the-Unseen-Restart/asset_import/wallgray1.jpg" id="9_s0aar"]
+[ext_resource type="PackedScene" uid="uid://dvg8hnnnr5fec" path="res://Echoes-of-the-Unseen-Restart/scenes_asset/player.tscn" id="12_e2ysw"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_8yeiw"]
 
@@ -55,8 +55,6 @@ albedo_texture = ExtResource("9_s0aar")
 [sub_resource type="BoxShape3D" id="BoxShape3D_s0aar"]
 
 [node name="Office" type="Node3D" unique_id=711704271]
-
-[node name="VHS_Shader" parent="." unique_id=1430508516 instance=ExtResource("1_gxl1f")]
 
 [node name="Office Cubicle Group" type="Node3D" parent="." unique_id=224946602]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0468998, 0, 2.5)
@@ -353,3 +351,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_n1y4y")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/ROOF" unique_id=1258912094]
 transform = Transform3D(20.165, 0, 0, 0, 0.38, 0, 0, 0, 10.13, 0, 7.5, -5)
 shape = SubResource("BoxShape3D_s0aar")
+
+[node name="PlayerController" parent="." unique_id=1396868878 instance=ExtResource("12_e2ysw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2190182, -2.0093334)
